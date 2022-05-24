@@ -4487,6 +4487,8 @@ border-right: 1px solid #e5e5e5;
   color: #fff;
   width: 100px;
   border: 0px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
 }
 
 @media (max-width: 1367px) {

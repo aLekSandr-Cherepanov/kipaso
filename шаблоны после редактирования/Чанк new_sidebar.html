@@ -31,11 +31,11 @@
               	<div class="content">
               		<h2 class="head_form">Подпишитесь на нашу рассылку</h2>
               	  <div class="input-group">
-              	      <form class="form_subscribe">
-              	        <input type="hidden" name="project_name" value="Kipaso Subscribe">
+              	      <form id="form_subscribe" class="form_subscribe" onsubmit="javascript:return validate('form_subscribe','email');">
+              	        <input type="hidden" name="project_name" value="Kipaso">
               		      <input type="hidden" name="admin_email" value="super.sany96@yandex.ru">
               		      <input type="hidden" name="form_subject" value="Form Subscribe">
-                        <input class="form-control" name="E-mail" id="subscribe-email" placeholder=" Введите Email" spellcheck="false" type="text">
+                        <input class="form_control" id="form-control" name="E-mail" id="subscribe-email" placeholder=" Введите Email" spellcheck="false" type="text">
                         <span class="input-group-btn">
                           <button class="btn" type="submit">Подписаться</button>
                         </span>
@@ -43,7 +43,7 @@
                   </div>
                   <div class="approval_processing">
                     <p class="text_processing">
-                      Наживая подписаться вы соглашаетесь с <a href="#">условиями обработки персональных данных</a>
+                      Нажимая подписаться вы соглашаетесь с <a href="#">условиями обработки персональных данных</a>
                     </p>
                   </div>
               	</div>
