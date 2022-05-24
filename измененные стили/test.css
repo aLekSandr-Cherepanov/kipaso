@@ -4488,4 +4488,20 @@ border-right: 1px solid #e5e5e5;
   width: 100px;
   border: 0px;
 }
+
+@media (max-width: 1367px) {
+  .container {
+    margin-top: 50px;
+  }
+}
+
+.approval_processing {
+  text-align: center;
+}
+
+.text_processing {
+  font-size: 10px;
+  margin-bottom: 0;
+}
+
 /* стили формы подписки на рассылку конец */
