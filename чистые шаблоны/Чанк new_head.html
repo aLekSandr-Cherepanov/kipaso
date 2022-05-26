@@ -1,0 +1,41 @@
+<head>
+    <meta charset="utf-8">
+    <base href="https://kipaso.ru/">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="/favicon.ico" rel="shortcut icon" />
+    <meta name = "format-detection" content = "telephone=no" />
+    [[!new_select_meta]]
+    [[*id:is=`302`:then=`<meta name="robots" content="noindex, nofollow">`]]
+    <link rel="stylesheet" href="/assets/templates/new/css/test.css">
+    <link rel="stylesheet" href="/assets/templates/new/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/assets/templates/new/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/assets/templates/new/css/font-awesome.css">
+   [[*template:is=`12`:then=`<link href="/assets/templates/site/lightbox.css" rel="stylesheet" />`]]
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            [].forEach.call(document.querySelectorAll('.lazy-img[data-src]'), function(img) {
+          img.setAttribute('src', img.getAttribute('data-src'));
+          img.onload = function() {
+            img.removeAttribute('data-src');
+          };
+        });
+        });
+    </script>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script defer type="text/javascript" src="/assets/components/tag_manager2/js/web/jquery-ui-1.10.3.custom.min.js"></script>
+    <script defer type="text/javascript" src="/assets/components/tag_manager2/js/web/jquery.history.js"></script>
+    <script defer type="text/javascript" src="/assets/components/tag_manager2/js/web/filters.js"></script>
+    <script defer type="text/javascript" src="/assets/components/tag_manager2/js/web/view_switch.js"></script>
+    <script>
+    var tmFiltersOptions = {"base_url":"\/","currency_default":"","currency_rate":""};
+    document.addEventListener('DOMContentLoaded', () => tmFilters.init(tmFiltersOptions));
+    </script>
+    <script defer src="/assets/templates/new/js/owl.carousel.js"></script>
+    <script defer src="/assets/templates/new/js/owl.autoplay.js"></script>
+    [[*template:is=`12`:then=`<script defer src="/assets/templates/site/lightbox-2.6.min.js"></script>`]]
+    <script defer src="/assets/templates/new/js/main.js"></script>
+    <script defer src="/assets/templates/new/js/top_news.js"></script>
+    <script defer src="/assets/templates/new/js/jquery.touchSwipe.js"></script>
+    <script defer src="/assets/templates/new/js/jquery.nicescroll.min.js"></script>
+    [[*template:is=`19`:or:is=`5`:then=`<script defer src="/assets/templates/new/js/tabs_old.js"></script>`:else=`<script defer src="/assets/templates/new/js/tabs.js"></script>`]]
+</head>
