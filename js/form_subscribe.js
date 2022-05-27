@@ -29,33 +29,40 @@ $(document).ready(function() {
  }*/
 
 
-/*unction formValidate(form) {
-	let error = 0;
-	let formReq = document.querySelectorAll('._req');
 
-	for (let index = 0; index < formReq.length; index++) {
-		const input = formReq[index];
-		formRemoveError(input);
 
-		if (input.classList.contains('.form_control')){
-			if(emailTest(input)){
-				formAddError(input);
-				error++;
-			}
-		}
+/*function validate() {
+	let a = document.forms["myForm"]["E-mail"].value;
+    if (a == "") {
+      alert("Укажите ваше имя");
+      return false;
+}
+}*/
 
+
+
+
+
+
+
+function formValidation() {
+
+	var uemail = document.registration.E-mail;
+		if(ValidateEmail(uemail)) {
+			return false;
+		} 
+		
+} 
+
+
+function ValidateEmail(uemail) {
+	var mailformat = /^w+([.-]?w+)*@w+([.-]?w+)*(.w{2,3})+$/;
+	if(uemail.value.match(mailformat)) {
+		return true;
+	}
+	else {
+		alert("Вы ввели не правильный email");
+		uemail.focus();
+		return false;
 	}
 }
-
-function formAddError(input) {
-	input.parentElement.classList.add('_error');
-	input.classList.remove('_error');
-}
-function formRemoveError(input) {
-	input.parentElement.classList.remove('_error');
-	input.classList.remove('_error');
-}
-
-function emailTest(input) {
-	return !/^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/.test(input.value);
-}*/
