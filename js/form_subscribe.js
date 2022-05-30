@@ -76,7 +76,7 @@ $(document).ready(function() {
 
 
 
-function formValidation() {
+/*function formValidation() {
 
 	var uemail = document.registration.E-mail;
 		if(ValidateEmail(uemail)) {
@@ -96,4 +96,4 @@ function ValidateEmail(uemail) {
 		uemail.focus();
 		return false;
 	}
-}
+}*/
