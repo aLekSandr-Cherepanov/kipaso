@@ -3,9 +3,6 @@ $(document).ready(function() {
 	//E-mail Ajax Send
 	$("form").submit(function() { //Change
 		var th = $(this);
-		let search = document.forms["formSubscribe"]["formControl"].value;
-		
-		if(search === "/^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/")
 		$.ajax({
 			type: "POST",
 			url: "mail.php", //Change
@@ -17,9 +14,6 @@ $(document).ready(function() {
 				th.trigger("reset");
 			}, 1000);
 		});
-		else {
-			alert("Проверьте email");
-		}
 		return false;
 	});
 
