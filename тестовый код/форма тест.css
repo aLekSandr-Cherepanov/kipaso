@@ -31,10 +31,12 @@ dd {
 
 /* Выставляем основные настройки по-умолчанию для body */
 body {
-  min-height: 100vh;
+  height: 100%;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
+  line-height: 1;
+  font-size: 14px;
+  font-family: Arial, "Helvetica, sans-serif";
 }
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
@@ -82,30 +84,95 @@ select {
 
 
 .form {
+  max-width: 550px;
+  margin: 0px auto;
+  color: black;
+  padding: 30px 0;
 }
+
 .form__body {
+
 }
+
 .form__title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0px 0px 30px 0px;
 }
+
 .form__item {
+  margin: 0px 0px 20px 0px;
+  border: 1px solid;
+  padding: 10px;
+  border-radius: 10px;
 }
+
 .form__label {
+  font-size: 18px;
+  display: block;
+  margin: 0px 0px 10px 0px;
 }
+
 .form__input {
+  width: 100%;
+  height: 50px;
+  padding: 0px 20px;
+  border-radius: 5px;
+  font-size: 18px;
 }
+textarea.form__input {
+  min-height: 100px;
+}
+
 .options {
 }
+
 .options__item {
+  margin-bottom: 18px;
 }
+
 .options__input {
 }
+
 .options__label {
+  font-size: 18px;
+  letter-spacing: 1px;
 }
+
 .checkbox {
 }
+
 .checkbox__input {
 }
+
 .checkbox__label {
 }
+
 .form__button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60px;
+  background-color: #7a966b;
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 20px;
+  box-shadow: 0 3px 0 #161b13;
+  transition: background-color 0.5s ease 0s;
+  position: relative;
+  top: 0;
+}
+
+.form__button:hover {
+  background-color: #4f6146;
+}
+
+.form__button:active {
+  top: 3px;
+  box-shadow: 0 1px 0 #161b13;
 }
