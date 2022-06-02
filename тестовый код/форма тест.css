@@ -120,6 +120,11 @@ select {
   border-radius: 5px;
   font-size: 18px;
 }
+
+.form__input._error {
+  box-shadow: 0 0 7px red;
+}
+
 textarea.form__input {
   min-height: 100px;
 }
