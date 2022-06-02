@@ -91,7 +91,25 @@ select {
 }
 
 .form__body {
+  position: relative;
+}
 
+.form__body::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(66, 65, 65, 0.473) url("/файлы сайтов/Kipaso/файлы и код для редактирования/тестовый код/img/cat-what.gif") center / 500px no-repeat;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease 0s;
+}
+
+.form__body._sending::after{
+  opacity: 1;
+  visibility: visible;
 }
 
 .form__title {
@@ -145,6 +163,10 @@ textarea.form__input {
 }
 
 .checkbox {
+}
+
+.checkbox._error .checkbox__label::before {
+  box-shadow: 0 0 7px red;
 }
 
 .checkbox__input {

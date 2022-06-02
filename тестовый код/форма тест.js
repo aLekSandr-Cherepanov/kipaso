@@ -8,6 +8,34 @@ document.addEventListener('DOMContentLoaded', function () {
         e.preventDefault();
 
         let error = formValidate(form);
+
+        let formData = new FormData(form);
+
+        if (error === 0) {
+            form.classList.add('_sending');
+            let response = await fetch('sendmail.php', {
+                method: 'POST',
+                body: formData
+            });
+            if (response.ok) {
+                let result = await response. json();
+                alert(result.message);
+                formPreview.innerHTML = '';
+                form.reset();
+                form.classList.remove(' _sending');
+            } else {
+                alert("Oшибка");
+                form.classList.remove('sending');
+            }
+            } else {
+                alert('Заполните обязательные поля');
+            }
+
+        if (error === 0) {
+
+        } else {
+            alert('Заполните обязательные поля или исправьте ошибки');
+        }
     }
 
     function formValidate(form) {
@@ -23,16 +51,17 @@ document.addEventListener('DOMContentLoaded', function () {
                     formAddError(input);
                     error++;
                 }
-            }else if (input.getAttribute("type") === "checkbox" && input.checked === false) {
+            } else if (input.getAttribute("type") === "checkbox" && input.checked === false) {
                 formAddError(input);
                 error++;
-            }else{
+            } else {
                 if (input.value === '') {
                     formAddError(input);
                     error++;
                 }
             }
         }
+        return error;
     }
     function formAddError(input) {
         input.parentElement.classList.add('_error');
@@ -44,6 +73,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     //Функция теста email
     function emailTest(input) {
-        return !/^\w+([\.-]2\w+)*@\w+([\.-]?\w+)*(1.\w{2,8})+$/.test(input.value);
+        return !/^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/.test(input.value);
     }
 });
