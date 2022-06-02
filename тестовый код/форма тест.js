@@ -22,10 +22,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 alert(result.message);
                 formPreview.innerHTML = '';
                 form.reset();
-                form.classList.remove(' _sending');
+                form.classList.remove('_sending');
             } else {
                 alert("Oшибка");
-                form.classList.remove('sending');
+                form.classList.remove('_sending');
             }
             } else {
                 alert('Заполните обязательные поля');
@@ -63,6 +63,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         return error;
     }
+
     function formAddError(input) {
         input.parentElement.classList.add('_error');
         input.classList.add('_error');
@@ -71,6 +72,7 @@ document.addEventListener('DOMContentLoaded', function () {
         input.parentElement.classList.remove('_error');
         input.classList.remove('_error');
     }
+
     //Функция теста email
     function emailTest(input) {
         return !/^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/.test(input.value);
