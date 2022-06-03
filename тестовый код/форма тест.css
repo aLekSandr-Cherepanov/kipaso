@@ -147,14 +147,10 @@ textarea.form__input {
   min-height: 100px;
 }
 
-.options {
-}
+
 
 .options__item {
   margin-bottom: 18px;
-}
-
-.options__input {
 }
 
 .options__label {
@@ -162,18 +158,10 @@ textarea.form__input {
   letter-spacing: 1px;
 }
 
-.checkbox {
-}
-
 .checkbox._error .checkbox__label::before {
   box-shadow: 0 0 7px red;
 }
 
-.checkbox__input {
-}
-
-.checkbox__label {
-}
 
 .form__button {
   width: 100%;
