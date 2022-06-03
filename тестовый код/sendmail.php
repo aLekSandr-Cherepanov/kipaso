@@ -85,7 +85,7 @@
 
 
     if(trim(!empty($_POST['visit']))){
-        $body.="<p><strong>Какой мастер-класс Вы бы хотели посетить:</strong>".$_POST['programEnvironment'].'</p>';
+        $body.="<p><strong>Какой мастер-класс Вы бы хотели посетить:</strong>".$_POST['visit'].'</p>';
     }
 
 
@@ -93,4 +93,19 @@
         $body.="<p><strong>Какой результат Вы ожидаете от мастер-класса?:</strong>".$_POST['expectation'].'</p>';
     }
 
+
+    $mail->Body = $body;
+
+    //Отправляем
+
+    if (!$mail->send()) {
+        $message = 'Ошибка';
+    } else {
+        $message = 'Данные отправлены';
+    }
     
+    $response = ['message' => $message];
+
+    header('Content-type: application/json');
+    echo json_encode($response);
+    ?>

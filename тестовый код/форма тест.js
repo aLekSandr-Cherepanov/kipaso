@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 body: formData
             });
             if (response.ok) {
-                let result = await response. json();
+                let result = await response.json();
                 alert(result.message);
                 formPreview.innerHTML = '';
                 form.reset();
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const input = formReq[index];
             formRemoveError(input);
 
-            if (input.classList.contains('_email')){
+            if (input.classList.contains('_email')) {
                 if (emailTest(input)){
                     formAddError(input);
                     error++;

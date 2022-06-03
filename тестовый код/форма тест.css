@@ -81,10 +81,8 @@ select {
 
 
 
-
-
 .form {
-  max-width: 550px;
+  max-width: 700px;
   margin: 0px auto;
   color: black;
   padding: 30px 0;
@@ -94,7 +92,7 @@ select {
   position: relative;
 }
 
-.form__body::after {
+/*.form__body::after {
   content: '';
   position: absolute;
   top: 0;
@@ -105,7 +103,7 @@ select {
   opacity: 0;
   visibility: hidden;
   transition: all 0.5s ease 0s;
-}
+}*/
 
 .form__body._sending::after{
   opacity: 1;
