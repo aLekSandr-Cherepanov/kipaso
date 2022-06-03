@@ -27,7 +27,7 @@
     
     //Тело письма
     
-    $body = "<h1>Анкета</h1>";
+    $body = "<h1>Ответы на анкету</h1>";
     
     if(trim(!empty($_POST['company']))){
         $body.="<p><strong>Наименование компании:</strong>".$_POST['company'].'</p>';
