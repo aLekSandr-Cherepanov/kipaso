@@ -63,6 +63,10 @@
         $body.="<p><strong>E-mail:</strong>".$_POST['email'].'</p>';
     }
 
+    if(trim(!empty($_POST['objects']))){
+        $body.="<p><strong>Объекты автоматизации Вашей компании:</strong>".$_POST['objects'].'</p>';
+    }
+
 
     if(trim(!empty($_POST['controllers']))){
         $body.="<p><strong>Вы чаще применяете в своих проектах автоматизации:</strong>".$_POST['controllers'].'</p>';
