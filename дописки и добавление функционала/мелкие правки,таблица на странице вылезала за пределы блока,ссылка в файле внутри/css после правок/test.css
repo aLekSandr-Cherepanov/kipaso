@@ -1425,6 +1425,8 @@ a {
 
 .product-description__text {
   display: none;
+  overflow: scroll;
+  
 }
 
 .product-description__text_visible {
