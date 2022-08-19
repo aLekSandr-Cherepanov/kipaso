@@ -1426,7 +1426,6 @@ a {
 
 .product-description__text {
   display: none;
-  overflow: scroll;
 }
 
 .product-description__text_visible {
@@ -1554,7 +1553,7 @@ a {
 }
 
 .like:first-child {
-  margin-top: 2rem;
+  /*margin-top: 2rem;*/
 }
 
 .article {
