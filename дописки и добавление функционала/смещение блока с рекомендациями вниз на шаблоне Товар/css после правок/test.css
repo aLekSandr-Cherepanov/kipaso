@@ -1399,7 +1399,7 @@ a {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 70%;
+  /*width: 70%;*/
   float: left;
   border-right: 1px solid #e5e5e5;
   padding: 1rem 1.5rem;
@@ -1413,7 +1413,8 @@ a {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 30%;
+  display: flex;
+  width: 100%;
   float: right;
 }
 
@@ -1425,6 +1426,7 @@ a {
 
 .product-description__text {
   display: none;
+  overflow: scroll;
 }
 
 .product-description__text_visible {
@@ -4510,4 +4512,16 @@ border-right: 1px solid #e5e5e5;
   margin-top: 60px;
 }
 
+
 /* стили формы подписки на рассылку конец */
+
+.wraaper_recommendations {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 560px) {
+  .product-description__sidebar {
+    flex-direction: column;
+  }
+}

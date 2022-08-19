@@ -72,87 +72,103 @@
             <div class="product__description product-description">
               <div class="product-description__nav">
                 <ul class="tabs">
-                  <li class="tabs__item tabs__item_current"><span class="tabs__text">Описание</span></li>
-                  <li class="tabs__item"><span class="tabs__text">Характеристики</span></li>
-                  [[*proizvoditel:is=`MeyerTec`:then=`<li class="tabs__item"><span class="tabs__text">Каталог и
-                      цены</span></li>`]]
-                  [[*mods:is=``:then=``:else=`<li class="tabs__item"><span class="tabs__text">Модификации</span></li>`]]
-                  [[*shema:is=``:then=``:else=`<li class="tabs__item"><span class="tabs__text">Схемы</span></li>`]]
-                  [[*pdf:is=``:then=``:else=`<li class="tabs__item"><span class="tabs__text">Документация</span></li>`]]
-                  [[*photo:is=``:then=``:else=`<li class="tabs__item"><span class="tabs__text">Фото</span></li>`]]
+                  <li class="tabs__item tabs__item_current">
+                    <span class="tabs__text">Описание</span>
+                  </li>
+                  <li class="tabs__item">
+                    <span class="tabs__text">Характеристики</span>
+                  </li>
+                    [[*proizvoditel:is=`MeyerTec`:then=`<li class="tabs__item">
+                    <span class="tabs__text">Каталог и цены</span>
+                  </li>`]]
+                  [[*mods:is=``:then=``:else=`<li class="tabs__item">
+                    <span class="tabs__text">Модификации</span>
+                  </li>`]]
+                  [[*shema:is=``:then=``:else=`<li class="tabs__item">
+                    <span class="tabs__text">Схемы</span>
+                  </li>`]]
+                  [[*pdf:is=``:then=``:else=`<li class="tabs__item">
+                    <span class="tabs__text">Документация</span>
+                  </li>`]]
+                  [[*photo:is=``:then=``:else=`<li class="tabs__item">
+                    <span class="tabs__text">Фото</span>
+                  </li>`]]
                 </ul>
               </div>
-                <div class="product-description__content" id="full-content">
-                  <div class="product-description__text product-description__text_visible">
-                    [[*content]]
-                    <p>Купить [[*proizvoditel]] [[*pagetitle]] можно как с доставкой транспортными компаниями, так и с
-                      самовывозом со склада компании КИПАСО. Цену на [[*pagetitle]] можно уточнить у наших технических
-                      специалистов.</p>
-                    <p>[[*sertif:replace=`||==`]]</p>
+                <div class="wraaper_recommendations">
+                  <div class="product-description__content" id="full-content">
+                    <div class="product-description__text product-description__text_visible">
+                      [[*content]]
+                      <p>Купить [[*proizvoditel]] [[*pagetitle]] можно как с доставкой транспортными компаниями, так и с
+                        самовывозом со склада компании КИПАСО. Цену на [[*pagetitle]] можно уточнить у наших технических
+                        специалистов.</p>
+                      <p>[[*sertif:replace=`||==`]]</p>
+                    </div>
+                    <div class="product-description__text">
+                      [[*harakter]]
+                    </div>
+                    [[*proizvoditel:is=`MeyerTec`:then=`<div class="product-description__text">
+                      <p>Смотреть обновленный каталог MeyerTec и прайс-лист:</p>
+                      <a href="/assets/files/mt_katalog.pdf" target="_blank" title="Каталог MeyerTec">
+                        <img src="/assets/templates/site/mt_katalog.png" style="padding-right:6px" title="Каталог MeyerTec" />
+                      </a>
+                      <a href="/assets/files/price_meyertec.pdf" target="_blank" title="Прайс-лист MeyerTec">
+                        <img src="/assets/templates/site/mt_price.png" style="padding-left:6px" title="Прайс-лист MeyerTec" />
+                      </a>
+                    </div>`]]
+                    [[*mods:is=``:then=``:else=`<div class="product-description__text">
+                      [[shk_include?
+                      &file=`core/components/shopkeeper/elements/snippets/param_edit_table.php`
+                      &tvValue=`[[*mods]]`
+                      &tpl=`properties`
+                      ]]
+                    </div>`]]
+                    [[*shema:is=``:then=``:else=`<div class="product-description__text">
+                      [[shk_include?
+                      &file=`core/components/shopkeeper/elements/snippets/param_edit_table.php`
+                      &tvValue=`[[*shema]]`
+                      &tpl=`new_shema`
+                      ]]
+                    </div>`]]
+                    [[*pdf:is=``:then=``:else=`<div class="product-description__text">
+                      [[shk_include?
+                      &file=`core/components/shopkeeper/elements/snippets/param_edit_table.php`
+                      &tvValue=`[[*pdf]]`
+                      &tpl=`pdf`
+                      ]]
+                    </div>`]]
+                    [[*photo:is=``:then=``:else=`<div class="product-description__text">
+                      [[shk_include?
+                      &file=`core/components/shopkeeper/elements/snippets/param_edit_table.php`
+                      &tvValue=`[[*photo]]`
+                      &tpl=`foto_table`
+                      ]]
+                    </div>`]]
                   </div>
-                  <div class="product-description__text">
-                    [[*harakter]]
-                  </div>
-                  [[*proizvoditel:is=`MeyerTec`:then=`<div class="product-description__text">
-                    <p>Смотреть обновленный каталог MeyerTec и прайс-лист:</p>
-                    <a href="/assets/files/mt_katalog.pdf" target="_blank" title="Каталог MeyerTec"><img
-                        src="/assets/templates/site/mt_katalog.png" style="padding-right:6px"
-                        title="Каталог MeyerTec" /></a>
-                    <a href="/assets/files/price_meyertec.pdf" target="_blank" title="Прайс-лист MeyerTec"><img
-                        src="/assets/templates/site/mt_price.png" style="padding-left:6px"
-                        title="Прайс-лист MeyerTec" /></a>
-                  </div>`]]
-                  [[*mods:is=``:then=``:else=`<div class="product-description__text">
-                    [[shk_include?
-                    &file=`core/components/shopkeeper/elements/snippets/param_edit_table.php`
-                    &tvValue=`[[*mods]]`
-                    &tpl=`properties`
-                    ]]
-                  </div>`]]
-                  [[*shema:is=``:then=``:else=`<div class="product-description__text">
-                    [[shk_include?
-                    &file=`core/components/shopkeeper/elements/snippets/param_edit_table.php`
-                    &tvValue=`[[*shema]]`
-                    &tpl=`new_shema`
-                    ]]
-                  </div>`]]
-                  [[*pdf:is=``:then=``:else=`<div class="product-description__text">
-                    [[shk_include?
-                    &file=`core/components/shopkeeper/elements/snippets/param_edit_table.php`
-                    &tvValue=`[[*pdf]]`
-                    &tpl=`pdf`
-                    ]]
-                  </div>`]]
-                  [[*photo:is=``:then=``:else=`<div class="product-description__text">
-                    [[shk_include?
-                    &file=`core/components/shopkeeper/elements/snippets/param_edit_table.php`
-                    &tvValue=`[[*photo]]`
-                    &tpl=`foto_table`
-                    ]]
-                  </div>`]]
-                </div>
               
-                <div class="product-description__sidebar">
-                  <div class="product-description__like like">
-                    <!-- <div class="like__label">Рекомендуем</div> -->
-                    <h3 class="like__header">Рекомендуем:</h3>
-                    <div class="like__list owl-carousel" id="product-recommend">
-                      [[!getProducts? &parents=`-1` &limit=`10` &tpl=`new_like__block` &includeTVs=`1` &depth=`5`
-                      &className=`shopContent` &packageName=`shop` &resources=`[[*new_article_products]]`]]
+                  <div class="product-description__sidebar">
+                    <div class="product-description__like like">
+                      <!-- <div class="like__label">Рекомендуем</div> -->
+                      <h3 class="like__header">Рекомендуем:</h3>
+                      <div class="like__list owl-carousel" id="product-recommend">
+                        [[!getProducts? &parents=`-1` &limit=`10` &tpl=`new_like__block` &includeTVs=`1` &depth=`5`
+                        &className=`shopContent` &packageName=`shop` &resources=`[[*new_article_products]]`]]
+                      </div>
+                      <div class="like__nav carousel-nav">
+                        <div class="carousel-nav__button like__nav-button carousel-nav__prev like__prev"></div>
+                        <div class="carousel-nav__button like__nav-button carousel-nav__next like__next"></div>
+                      </div>
                     </div>
-                    <div class="like__nav carousel-nav">
-                      <div class="carousel-nav__button like__nav-button carousel-nav__prev like__prev"></div>
-                      <div class="carousel-nav__button like__nav-button carousel-nav__next like__next"></div>
+                    <div class="product-description__like like">
+                      <h3 class="like__header">Похожее оборудование:</h3>
+                      <div class="like__list">
+                        [[!getProducts? &parents=`[[*resource_id]]` &sortby=`RAND()` &limit=`1` &tpl=`new_like__block`
+                        &includeTVs=`1` &depth=`1` &className=`shopContent` &packageName=`shop`]]
+                      </div>
+                      <div class="like__readmore-wrap">
+                        <a class="like__readmore" href="[[~[[*resource_id]]]]">Перейти в категорию</a>
+                      </div>
                     </div>
-                  </div>
-                  <div class="product-description__like like">
-                    <h3 class="like__header">Похожее оборудование:</h3>
-                    <div class="like__list">
-                      [[!getProducts? &parents=`[[*resource_id]]` &sortby=`RAND()` &limit=`1` &tpl=`new_like__block`
-                      &includeTVs=`1` &depth=`1` &className=`shopContent` &packageName=`shop`]]
-                    </div>
-                    <div class="like__readmore-wrap"><a class="like__readmore" href="[[~[[*resource_id]]]]">Перейти в
-                        категорию</a></div>
                   </div>
                 </div>
             </div>
