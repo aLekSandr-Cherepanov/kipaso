@@ -13,7 +13,7 @@
     //От кого письмо
     $mail->setFrom('info@fls.guru', 'kipaso form');
     //Кому отправить
-    $mail->addAddress('super.sany96@yandex.ru');
+    $mail->addAddress('dev@kipaso.ru');
     //Тема письма
     $mail->Subject = 'Анкета участника мастер-класса';
     
