@@ -4168,7 +4168,7 @@ input[type="search"]::-webkit-search-results-decoration { display:none; }
 }
 
 .special_fourth::before {
-    background-image: url(../img/main_icon4b__.jpg);
+    background-image: url(../img/oven_logotip.jpg);
 }
 
 .special__inner {
