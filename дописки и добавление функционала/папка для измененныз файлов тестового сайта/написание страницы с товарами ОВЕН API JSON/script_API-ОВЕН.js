@@ -19,6 +19,24 @@
 
 // написание кода для вывода товаров
 
-let response = fetch('https://owen.ru/export/catalog.json?host=test.kipaso.ru&key=Tl3RqJTP1X9UZXjNYELQQ3dgNfqjDksl')
+async function getResponse(){
+    let response = await fetch('https://owen.ru/export/catalog.json?host=test.kipaso.ru&key=Tl3RqJTP1X9UZXjNYELQQ3dgNfqjDksl')
+    let content = await response.json();
+    let data = document.querySelector('.wrapper-container');
+    //content = content.categories;
+    
+    let key;
+    
+    for(key in content) {
 
-console.log(response)
+        data.innerHTML += `
+            <div class="wrapper-container">
+                <div>
+                    <h2>${content[key].categories}</h2>
+                </div>
+            </div>
+        `
+        console.log(content)
+    }
+}
+getResponse()
