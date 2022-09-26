@@ -15,21 +15,10 @@
     }
 
     placeholder.innerHTML = out;
-})*/
+});*/
 
-function load_data() {
-    fetch("https://owen.ru/export/catalog.json?host=test.kipaso.ru&key=Tl3RqJTP1X9UZXjNYELQQ3dgNfqjDksl").then(res => res.json())
-    .then(res => {
-        str_body = ""
+// написание кода для вывода товаров
 
-        res.forEach(r => {
-            str_body += `
-            <div>
-                ${r["categories"]}
-            </div>
-            `
-        });
-        $(".wrapper-container").html(str_body)
-    })
-}
-load_data();
+let response = fetch('https://owen.ru/export/catalog.json?host=test.kipaso.ru&key=Tl3RqJTP1X9UZXjNYELQQ3dgNfqjDksl')
+
+console.log(response)
