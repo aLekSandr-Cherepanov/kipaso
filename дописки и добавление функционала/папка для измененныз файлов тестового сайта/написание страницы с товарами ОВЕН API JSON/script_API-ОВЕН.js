@@ -32,7 +32,12 @@ async function getResponse(){
         data.innerHTML += `
             <div>
                 <div>
-                    <h2>${content[0].items[0].name}</h2>
+                    <h2>${content[key].name}</h2>
+                    <div>
+                        <p>
+                            <span>${content[key].items[key].name}</span>
+                        </p>
+                    </div>
                     
                 </div>
             </div>
