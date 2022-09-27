@@ -1,7 +1,7 @@
 async function getResponse(){
     let response = await fetch('https://owen.ru/export/catalog.json?host=test.kipaso.ru&key=Tl3RqJTP1X9UZXjNYELQQ3dgNfqjDksl');
     let content = await response.json();
-    content = content.categories;
+    //content = content.categories;
     
     let data = document.querySelector('.wrapper-container');
  
@@ -10,8 +10,8 @@ async function getResponse(){
         data.innerHTML += `
             <div>
                 <div>
-                    <h2>${content[0].name}</h2>
-                    <span>${content[0].items[key].name}</span>
+                    <h2>${content.categories[0].name}</h2>
+                    <span>${content.categories[0].items[key].name}</span>
                 </div>
             </div>
         `
