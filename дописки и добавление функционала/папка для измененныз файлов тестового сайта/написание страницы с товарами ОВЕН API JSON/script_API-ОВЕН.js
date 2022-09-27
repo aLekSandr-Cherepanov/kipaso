@@ -1,24 +1,3 @@
-/*fetch("https://owen.ru/export/catalog.json?host=test.kipaso.ru&key=Tl3RqJTP1X9UZXjNYELQQ3dgNfqjDksl")
-.then(function(response){
-    return response.json();
-})
-.then(function(products){
-    let placeholder = document.querySelector(".wrapper-container");
-    let out = "";
-    for(let product of products){
-        out += `
-            <div>
-                ${product.name}
-            </div>
-        
-        `;
-    }
-
-    placeholder.innerHTML = out;
-});*/
-
-// написание кода для вывода товаров
-
 async function getResponse(){
     let response = await fetch('https://owen.ru/export/catalog.json?host=test.kipaso.ru&key=Tl3RqJTP1X9UZXjNYELQQ3dgNfqjDksl');
     let content = await response.json();
@@ -32,12 +11,20 @@ async function getResponse(){
             <div>
                 <div>
                     <h2>${content[key].name}</h2>
-                    <p>
-                        <span>${content[key].items[key].name}</span>
-                    </p>
                 </div>
             </div>
         `
+        for(let key in content){
+            data.innerHTML += `
+                <div>
+                    <div>
+                        <p>
+                            <span>${content[key].items[key].name}</span>
+                        </p>
+                    </div>
+                </div>
+            `
+        }
         console.log(content)
     }
 }
