@@ -4,18 +4,30 @@ async function getResponse(){
     content = content.categories;
     
     let data = document.querySelector('.wrapper-container');
- 
+    let subcategory = document.querySelector('.subcategory');
+    let products = document.querySelector('.block-link-product');
+
+    data.innerHTML += `
+        <div>
+            <h2>${content[0].name}</h2>
+        </div>
+    `
+    
     for(let key in content) {
 
-        data.innerHTML += `
-            <div>
-                <div>
-                    <h2>${content[0].name}</h2>
-                    <span>${content[0].items[key].name}</span>
-                </div>
-            </div>
+        subcategory.innerHTML += `
+            <p>
+                <span>${content[0].items[key].name}</span>
+            </p>
         `
     }
+    for(let key in content) {
+
+        products.innerHTML += `
+            <a href="">${content[0].items[0].products[key].name}</a>
+        `
+    }
+
     console.log(content)
 }
 getResponse()
