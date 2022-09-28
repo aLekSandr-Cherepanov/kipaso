@@ -12,20 +12,24 @@ async function getResponse(){
             <h2>${content[0].name}</h2>
         </div>
     `
-    
+    subcategory.innerHTML += `
+            <p>
+                <span>${content[0].items[0].name}</span><br>
+            </p>
+            <div>
+                <span>Продукты:</span>
+            </div>
+        `
     for(let key in content) {
 
         subcategory.innerHTML += `
             <p>
-                <span>${content[0].items[key].name}</span>
+                <span>${content[0].items[0].products[key].name}</span>
             </p>
         `
-    }
-    for(let key in content) {
-
-        products.innerHTML += `
+        /*products.innerHTML += `
             <a href="">${content[0].items[0].products[key].name}</a>
-        `
+        `*/
     }
 
     console.log(content)
