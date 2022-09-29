@@ -421,6 +421,11 @@ async function getResponse(){
             </p>
         `
     }
+    subcategory2.innerHTML += `
+        <p>
+            <a href="#">${content[1].items[3].products[5].name}</a>
+        </p>
+    `
 
 
 
