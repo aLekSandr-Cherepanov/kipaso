@@ -353,11 +353,74 @@ async function getResponse(){
         </p>
     `
 
+    subcategory2.innerHTML += `
+        <span class="style-subcategory">${content[1].items[1].name}</span><br>
+        <div>
+            <span>Приборы:</span>
+        </div>
+    `
 
+    for(let key in content) {
 
+        subcategory2.innerHTML += `
+            <p>
+                <a href="#">${content[1].items[1].products[key].name}</a>
+            </p>
+        `
+    }
 
+    subcategory2.innerHTML += `
+        <p>
+            <a href="#">${content[1].items[1].products[5].name}</a>
+        </p>
+        <p>
+            <a href="#">${content[1].items[1].products[6].name}</a>
+        </p>
+        <p>
+            <a href="#">${content[1].items[1].products[7].name}</a>
+        </p>
+        <p>
+            <a href="#">${content[1].items[1].products[8].name}</a>
+        </p>
+        <p>
+            <a href="#">${content[1].items[1].products[9].name}</a>
+        </p>
+        <p>
+            <a href="#">${content[1].items[1].products[10].name}</a>
+        </p>
+        <p>
+            <a href="#">${content[1].items[1].products[11].name}</a>
+        </p>
+    `
 
+    subcategory2.innerHTML += `
+        <span class="style-subcategory">${content[1].items[2].name}</span><br>
+        <div>
+            <span>Приборы:</span>
+        </div>
+    `
 
+    subcategory2.innerHTML += `
+        <p>
+            <a href="#">${content[1].items[2].products[0].name}</a>
+        </p>
+    `
+
+    subcategory2.innerHTML += `
+        <span class="style-subcategory">${content[1].items[3].name}</span><br>
+        <div>
+            <span>Приборы:</span>
+        </div>
+    `
+
+    for(let key in content) {
+
+        subcategory2.innerHTML += `
+            <p>
+                <a href="#">${content[1].items[3].products[key].name}</a>
+            </p>
+        `
+    }
 
 
 
