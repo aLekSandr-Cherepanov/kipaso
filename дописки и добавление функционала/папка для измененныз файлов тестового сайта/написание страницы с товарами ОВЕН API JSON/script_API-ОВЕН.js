@@ -7,9 +7,10 @@ async function getResponse(){
     let subcategory = document.querySelector('.subcategory');
     let data2 = document.querySelector('.wrapper-container2');
     let subcategory2 = document.querySelector('.subcategory2');
+    let data3 = document.querySelector('.wrapper-container3');
+    let subcategory3 = document.querySelector('.subcategory3');
 
-    //Контрольно-измерительные приборы
-
+    //КОНТРОЛЬНО-ИЗМЕРИТЕЛЬНЫЕ ПРИБОРЫ
     //Измерители-регуляторы
 
     data.innerHTML += `
@@ -305,8 +306,7 @@ async function getResponse(){
 
 
 
-    //Программируемые устройства
-
+    //ПРОГРАММИРУЕМЫЕ УСТРОЙСТВА
     //Программируемые реле
 
     data2.innerHTML += `
@@ -352,6 +352,7 @@ async function getResponse(){
             <a href="#">${content[1].items[0].products[11].name}</a>
         </p>
     `
+    //Программируемые логические контроллеры
 
     subcategory2.innerHTML += `
         <span class="style-subcategory">${content[1].items[1].name}</span><br>
@@ -392,6 +393,7 @@ async function getResponse(){
             <a href="#">${content[1].items[1].products[11].name}</a>
         </p>
     `
+    //Сенсорные панельные контроллеры
 
     subcategory2.innerHTML += `
         <span class="style-subcategory">${content[1].items[2].name}</span><br>
@@ -405,6 +407,8 @@ async function getResponse(){
             <a href="#">${content[1].items[2].products[0].name}</a>
         </p>
     `
+
+    //Панели оператора
 
     subcategory2.innerHTML += `
         <span class="style-subcategory">${content[1].items[3].name}</span><br>
@@ -421,11 +425,398 @@ async function getResponse(){
             </p>
         `
     }
+
     subcategory2.innerHTML += `
         <p>
             <a href="#">${content[1].items[3].products[5].name}</a>
         </p>
     `
+
+    //Модули ввода/вывода
+
+    subcategory2.innerHTML += `
+        <span class="style-subcategory">${content[1].items[4].name}</span><br>
+        <div>
+            <span>Приборы:</span>
+        </div>
+    `
+
+    for(let key in content) {
+
+        subcategory2.innerHTML += `
+            <p>
+                <a href="#">${content[1].items[4].products[key].name}</a>
+            </p>
+        `
+    }
+
+    subcategory2.innerHTML += `
+        <p>
+            <a href="#">${content[1].items[4].products[5].name}</a>
+        </p>
+        <p>
+            <a href="#">${content[1].items[4].products[6].name}</a>
+        </p>
+        <p>
+            <a href="#">${content[1].items[4].products[7].name}</a>
+        </p>
+        <p>
+            <a href="#">${content[1].items[4].products[8].name}</a>
+        </p>
+        <p>
+            <a href="#">${content[1].items[4].products[9].name}</a>
+        </p>
+        <p>
+            <a href="#">${content[1].items[4].products[10].name}</a>
+        </p>
+        <p>
+            <a href="#">${content[1].items[4].products[11].name}</a>
+        </p>
+        <p>
+            <a href="#">${content[1].items[4].products[12].name}</a>
+        </p>
+        <p>
+            <a href="#">${content[1].items[4].products[13].name}</a>
+        </p>
+        
+    `
+    //Контроллеры для диспетчеризации, телемеханики и учета ресурсов
+
+    subcategory2.innerHTML += `
+        <span class="style-subcategory">${content[1].items[5].name}</span><br>
+        <div>
+            <span>Приборы:</span>
+        </div>
+    `
+
+    subcategory2.innerHTML += `
+        <p>
+            <a href="#">${content[1].items[5].products[0].name}</a>
+        </p>
+        <p>
+            <a href="#">${content[1].items[5].products[1].name}</a>
+        </p>
+        
+    `
+
+    //СИЛОВЫЕ И КОММУТАЦИОННЫЕ УСТРОЙСТВА
+    //Преобразователи частоты
+
+    data3.innerHTML += `
+        <div>
+            <h2>${content[2].name}</h2>
+        </div>
+    `
+    subcategory3.innerHTML += `
+        <span class="style-subcategory">${content[2].items[0].name}</span><br>
+        <div>
+            <span>Приборы:</span>
+        </div>
+    `
+
+    for(let key in content) {
+
+        subcategory3.innerHTML += `
+            <p>
+                <a href="#">${content[2].items[0].products[key].name}</a>
+            </p>
+        `
+    }
+
+    //Дроссели
+
+    subcategory3.innerHTML += `
+        <span class="style-subcategory">${content[2].items[1].name}</span><br>
+        <div>
+            <span>Приборы:</span>
+        </div>
+    `
+
+    subcategory3.innerHTML += `
+        <p>
+            <a href="#">${content[2].items[1].products[0].name}</a>
+        </p>
+    `
+    subcategory3.innerHTML += `
+        <p>
+            <a href="#">${content[2].items[1].products[1].name}</a>
+        </p>
+    `
+
+    //Тормозные резисторы
+
+    subcategory3.innerHTML += `
+        <span class="style-subcategory">${content[2].items[2].name}</span><br>
+        <div>
+            <span>Приборы:</span>
+        </div>
+    `
+    subcategory3.innerHTML += `
+        <p>
+            <a href="#">${content[2].items[2].products[0].name}</a>
+        </p>
+    `
+
+    //Блоки питания
+
+    subcategory3.innerHTML += `
+        <span class="style-subcategory">${content[2].items[3].name}</span><br>
+        <div>
+            <span>Приборы:</span>
+        </div>
+    `
+
+    for(let key in content) {
+
+        subcategory3.innerHTML += `
+            <p>
+                <a href="#">${content[2].items[3].products[key].name}</a>
+            </p>
+        `
+    }
+
+    subcategory3.innerHTML += `
+        <p>
+            <a href="#">${content[2].items[3].products[5].name}</a>
+        </p>
+    `
+    subcategory3.innerHTML += `
+        <p>
+            <a href="#">${content[2].items[3].products[6].name}</a>
+        </p>
+    `
+    subcategory3.innerHTML += `
+        <p>
+            <a href="#">${content[2].items[3].products[7].name}</a>
+        </p>
+    `
+    subcategory3.innerHTML += `
+        <p>
+            <a href="#">${content[2].items[3].products[8].name}</a>
+        </p>
+    `
+    subcategory3.innerHTML += `
+        <p>
+            <a href="#">${content[2].items[3].products[9].name}</a>
+        </p>
+    `
+    subcategory3.innerHTML += `
+        <p>
+            <a href="#">${content[2].items[3].products[10].name}</a>
+        </p>
+    `
+
+    //Устройства коммутации
+
+    subcategory3.innerHTML += `
+        <span class="style-subcategory">${content[2].items[4].name}</span><br>
+        <div>
+            <span>Приборы:</span>
+        </div>
+    `
+    subcategory3.innerHTML += `
+        <p>
+            <a href="#">${content[2].items[4].products[0].name}</a>
+        </p>
+    `
+
+    //Устройства контроля и защиты
+
+    subcategory3.innerHTML += `
+        <span class="style-subcategory">${content[2].items[5].name}</span><br>
+        <div>
+            <span>Приборы:</span>
+        </div>
+    `
+    subcategory3.innerHTML += `
+        <p>
+            <a href="#">${content[2].items[5].products[0].name}</a>
+        </p>
+    `
+    subcategory3.innerHTML += `
+        <p>
+            <a href="#">${content[2].items[5].products[1].name}</a>
+        </p>
+    `
+
+    //Регуляторы мощности
+
+    subcategory3.innerHTML += `
+        <span class="style-subcategory">${content[2].items[6].name}</span><br>
+        <div>
+            <span>Приборы:</span>
+        </div>
+    `
+    subcategory3.innerHTML += `
+        <p>
+            <a href="#">${content[2].items[6].products[0].name}</a>
+        </p>
+    `
+
+    //Твердотельные реле
+
+    subcategory3.innerHTML += `
+        <span class="style-subcategory">${content[2].items[7].name}</span><br>
+        <div>
+            <span>Приборы:</span>
+        </div>
+    `
+
+    for(let key in content) {
+
+        subcategory3.innerHTML += `
+            <p>
+                <a href="#">${content[2].items[7].products[key].name}</a>
+            </p>
+        `
+    }
+
+    subcategory3.innerHTML += `
+        <p>
+            <a href="#">${content[2].items[7].products[5].name}</a>
+        </p>
+    `
+    subcategory3.innerHTML += `
+        <p>
+            <a href="#">${content[2].items[7].products[6].name}</a>
+        </p>
+    `
+    subcategory3.innerHTML += `
+        <p>
+            <a href="#">${content[2].items[7].products[7].name}</a>
+        </p>
+    `
+    subcategory3.innerHTML += `
+        <p>
+            <a href="#">${content[2].items[7].products[8].name}</a>
+        </p>
+    `
+
+    //Промежуточные реле
+
+    subcategory3.innerHTML += `
+        <span class="style-subcategory">${content[2].items[8].name}</span><br>
+        <div>
+            <span>Приборы:</span>
+        </div>
+    `
+
+    for(let key in content) {
+
+        subcategory3.innerHTML += `
+            <p>
+                <a href="#">${content[2].items[8].products[key].name}</a>
+            </p>
+        `
+    }
+
+    subcategory3.innerHTML += `
+        <p>
+            <a href="#">${content[2].items[8].products[5].name}</a>
+        </p>
+    `
+    subcategory3.innerHTML += `
+        <p>
+            <a href="#">${content[2].items[8].products[6].name}</a>
+        </p>
+    `
+    subcategory3.innerHTML += `
+        <p>
+            <a href="#">${content[2].items[8].products[7].name}</a>
+        </p>
+    `
+    subcategory3.innerHTML += `
+        <p>
+            <a href="#">${content[2].items[8].products[8].name}</a>
+        </p>
+    `
+    subcategory3.innerHTML += `
+        <p>
+            <a href="#">${content[2].items[8].products[9].name}</a>
+        </p>
+    `
+    subcategory3.innerHTML += `
+        <p>
+            <a href="#">${content[2].items[8].products[10].name}</a>
+        </p>
+    `
+    subcategory3.innerHTML += `
+        <p>
+            <a href="#">${content[2].items[8].products[11].name}</a>
+        </p>
+    `
+
+    //Запорно-регулирующая арматура
+
+    subcategory3.innerHTML += `
+        <span class="style-subcategory">${content[2].items[9].name}</span><br>
+        <div>
+            <span>Приборы:</span>
+        </div>
+    `
+
+    subcategory3.innerHTML += `
+        <p>
+            <a href="#">${content[2].items[9].products[0].name}</a>
+        </p>
+    `
+    subcategory3.innerHTML += `
+        <p>
+            <a href="#">${content[2].items[9].products[1].name}</a>
+        </p>
+    `
+
+    //Приборы для индикации и управления задвижками
+
+    subcategory3.innerHTML += `
+        <span class="style-subcategory">${content[2].items[10].name}</span><br>
+        <div>
+            <span>Приборы:</span>
+        </div>
+    `
+
+    subcategory3.innerHTML += `
+        <p>
+            <a href="#">${content[2].items[10].products[0].name}</a>
+        </p>
+    `
+
+    subcategory3.innerHTML += `
+        <p>
+            <a href="#">${content[2].items[10].products[1].name}</a>
+        </p>
+    `
+
+    //Микроклимат для шкафов управления
+
+    subcategory3.innerHTML += `
+        <span class="style-subcategory">${content[2].items[11].name}</span><br>
+        <div>
+            <span>Приборы:</span>
+        </div>
+    `
+
+    for(let key in content) {
+
+        subcategory3.innerHTML += `
+            <p>
+                <a href="#">${content[2].items[11].products[key].name}</a>
+            </p>
+        `
+    }
+    subcategory3.innerHTML += `
+        <p>
+            <a href="#">${content[2].items[11].products[5].name}</a>
+        </p>
+    `
+
+    subcategory3.innerHTML += `
+        <p>
+            <a href="#">${content[2].items[11].products[6].name}</a>
+        </p>
+    `
+
+
 
 
 
