@@ -1743,6 +1743,51 @@ async function getResponse(){
         `
     }
 
+    //Модемы
+
+    subcategory5.innerHTML += `
+        <span class="style-subcategory">${content[4].items[9].name}</span><br>
+        <div>
+            <span>Приборы:</span>
+        </div>
+    `
+
+    subcategory5.innerHTML += `
+        <p>
+            <a href="#">${content[4].items[9].products[0].name}</a>
+        </p>
+    `
+
+    //PLC-модемы
+
+    subcategory5.innerHTML += `
+        <span class="style-subcategory">${content[4].items[10].name}</span><br>
+        <div>
+            <span>Приборы:</span>
+        </div>
+    `
+
+    subcategory5.innerHTML += `
+        <p>
+            <a href="#">${content[4].items[10].products[0].name}</a>
+        </p>
+    `
+
+    //Аксессуары
+
+    subcategory5.innerHTML += `
+        <span class="style-subcategory">${content[4].items[11].name}</span><br>
+        <div>
+            <span>Приборы:</span>
+        </div>
+    `
+
+    subcategory5.innerHTML += `
+        <p>
+            <a href="#">${content[4].items[11].products[0].name}</a>
+        </p>
+    `
+
 
 
     console.log(content)
