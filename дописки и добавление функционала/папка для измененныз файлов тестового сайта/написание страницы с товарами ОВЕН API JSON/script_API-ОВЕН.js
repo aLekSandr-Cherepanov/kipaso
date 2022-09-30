@@ -11,6 +11,9 @@ async function getResponse(){
     let subcategory3 = document.querySelector('.subcategory3');
     let data4 = document.querySelector('.wrapper-container4');
     let subcategory4 = document.querySelector('.subcategory4');
+    let data5 = document.querySelector('.wrapper-container5');
+    let subcategory5 = document.querySelector('.subcategory5');
+    
 
     //КОНТРОЛЬНО-ИЗМЕРИТЕЛЬНЫЕ ПРИБОРЫ
     //Измерители-регуляторы
@@ -1451,6 +1454,7 @@ async function getResponse(){
             <span>Приборы:</span>
         </div>
     `
+
     for(let key in content) {
 
         subcategory4.innerHTML += `
@@ -1459,6 +1463,7 @@ async function getResponse(){
             </p>
         `
     }
+
     subcategory4.innerHTML += `
         <p>
             <a href="#">${content[3].items[9].products[5].name}</a>
@@ -1510,10 +1515,233 @@ async function getResponse(){
         </p>
     `
 
+    //Аксессуары для датчиков уровня
 
+    subcategory4.innerHTML += `
+        <span class="style-subcategory">${content[3].items[10].name}</span><br>
+        <div>
+            <span>Приборы:</span>
+        </div>
+    `
 
+    for(let key in content) {
 
+        subcategory4.innerHTML += `
+            <p>
+                <a href="#">${content[3].items[10].products[key].name}</a>
+            </p>
+        `
+    }
 
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[10].products[5].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[10].products[6].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[10].products[7].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[10].products[8].name}</a>
+        </p>
+    `
+
+    //ПРОГРАММНОЕ ОБЕСПЕЧЕНИЕ ,УСТРОЙСТВА СВЯЗИ
+    //OwenCloud
+
+    data5.innerHTML += `
+        <div>
+            <h2>${content[4].name}</h2>
+        </div>
+    `
+
+    subcategory5.innerHTML += `
+        <span class="style-subcategory">${content[4].items[0].name}</span><br>
+        <div>
+            <span>Приборы:</span>
+        </div>
+    `
+
+    subcategory5.innerHTML += `
+        <p>
+            <a href="#">${content[4].items[0].products[0].name}</a>
+        </p>
+    `
+    subcategory5.innerHTML += `
+        <p>
+            <a href="#">${content[4].items[0].products[1].name}</a>
+        </p>
+    `
+
+    //SCADA системы
+
+    subcategory5.innerHTML += `
+        <span class="style-subcategory">${content[4].items[1].name}</span><br>
+        <div>
+            <span>Приборы:</span>
+        </div>
+    `
+    subcategory5.innerHTML += `
+        <p>
+            <a href="#">${content[4].items[1].products[0].name}</a>
+        </p>
+    `
+    subcategory5.innerHTML += `
+        <p>
+            <a href="#">${content[4].items[1].products[1].name}</a>
+        </p>
+    `
+    subcategory5.innerHTML += `
+        <p>
+            <a href="#">${content[4].items[1].products[2].name}</a>
+        </p>
+    `
+    subcategory5.innerHTML += `
+        <p>
+            <a href="#">${content[4].items[1].products[3].name}</a>
+        </p>
+    `
+    
+    //OPC-серверы
+
+    subcategory5.innerHTML += `
+        <span class="style-subcategory">${content[4].items[2].name}</span><br>
+        <div>
+            <span>Приборы:</span>
+        </div>
+    `
+    
+    subcategory5.innerHTML += `
+        <p>
+            <a href="#">${content[4].items[2].products[0].name}</a>
+        </p>
+    `
+    subcategory5.innerHTML += `
+        <p>
+            <a href="#">${content[4].items[2].products[1].name}</a>
+        </p>
+    `
+    subcategory5.innerHTML += `
+        <p>
+            <a href="#">${content[4].items[2].products[2].name}</a>
+        </p>
+    `
+    subcategory5.innerHTML += `
+        <p>
+            <a href="#">${content[4].items[2].products[3].name}</a>
+        </p>
+    `
+
+    //Конфигураторы
+
+    subcategory5.innerHTML += `
+        <span class="style-subcategory">${content[4].items[3].name}</span><br>
+        <div>
+            <span>Приборы:</span>
+        </div>
+    `
+
+    subcategory5.innerHTML += `
+        <p>
+            <a href="#">${content[4].items[3].products[0].name}</a>
+        </p>
+    `
+    subcategory5.innerHTML += `
+        <p>
+            <a href="#">${content[4].items[3].products[1].name}</a>
+        </p>
+    `
+
+    //Среда программирования CODESYS
+
+    subcategory5.innerHTML += `
+        <span class="style-subcategory">${content[4].items[4].name}</span><br>
+        <div>
+            <span>Приборы:</span>
+        </div>
+    `
+
+    subcategory5.innerHTML += `
+        <p>
+            <a href="#">${content[4].items[4].products[0].name}</a>
+        </p>
+    `
+    subcategory5.innerHTML += `
+        <p>
+            <a href="#">${content[4].items[4].products[1].name}</a>
+        </p>
+    `
+
+    //Программное обеспечение OwenLogic
+
+    subcategory5.innerHTML += `
+        <span class="style-subcategory">${content[4].items[5].name}</span><br>
+        <div>
+            <span>Приборы:</span>
+        </div>
+    `
+
+    subcategory5.innerHTML += `
+        <p>
+            <a href="#">${content[4].items[5].products[0].name}</a>
+        </p>
+    `
+
+    //Драйверы и библиотеки ОВЕН
+
+    subcategory5.innerHTML += `
+        <span class="style-subcategory">${content[4].items[6].name}</span><br>
+        <div>
+            <span>Приборы:</span>
+        </div>
+    `
+
+    subcategory5.innerHTML += `
+        <p>
+            <a href="#">${content[4].items[6].products[0].name}</a>
+        </p>
+    `
+
+    //Коммутаторы
+
+    subcategory5.innerHTML += `
+        <span class="style-subcategory">${content[4].items[7].name}</span><br>
+        <div>
+            <span>Приборы:</span>
+        </div>
+    `
+
+    subcategory5.innerHTML += `
+        <p>
+            <a href="#">${content[4].items[7].products[0].name}</a>
+        </p>
+    `
+
+    //Преобразователи интерфейсов и повторители
+
+    subcategory5.innerHTML += `
+        <span class="style-subcategory">${content[4].items[8].name}</span><br>
+        <div>
+            <span>Приборы:</span>
+        </div>
+    `
+
+    for(let key in content) {
+
+        subcategory5.innerHTML += `
+            <p>
+                <a href="#">${content[4].items[8].products[key].name}</a>
+            </p>
+        `
+    }
 
 
 
