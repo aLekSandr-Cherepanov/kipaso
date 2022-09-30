@@ -9,6 +9,8 @@ async function getResponse(){
     let subcategory2 = document.querySelector('.subcategory2');
     let data3 = document.querySelector('.wrapper-container3');
     let subcategory3 = document.querySelector('.subcategory3');
+    let data4 = document.querySelector('.wrapper-container4');
+    let subcategory4 = document.querySelector('.subcategory4');
 
     //КОНТРОЛЬНО-ИЗМЕРИТЕЛЬНЫЕ ПРИБОРЫ
     //Измерители-регуляторы
@@ -815,6 +817,542 @@ async function getResponse(){
             <a href="#">${content[2].items[11].products[6].name}</a>
         </p>
     `
+
+    //ДАТЧИКИ
+
+    //Датчики температуры
+
+    data4.innerHTML += `
+        <div>
+            <h2>${content[3].name}</h2>
+        </div>
+    `
+
+    subcategory4.innerHTML += `
+        <span class="style-subcategory">${content[3].items[0].name}</span><br>
+        <div>
+            <span>Приборы:</span>
+        </div>
+    `
+
+    for(let key in content) {
+
+        subcategory4.innerHTML += `
+            <p>
+                <a href="#">${content[3].items[0].products[key].name}</a>
+            </p>
+        `
+    }
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[0].products[5].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[0].products[6].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[0].products[7].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[0].products[8].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[0].products[9].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[0].products[10].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[0].products[11].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[0].products[12].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[0].products[13].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[0].products[14].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[0].products[15].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[0].products[16].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[0].products[17].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[0].products[18].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[0].products[19].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[0].products[20].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[0].products[21].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[0].products[22].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[0].products[23].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[0].products[24].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[0].products[25].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[0].products[26].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[0].products[27].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[0].products[28].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[0].products[29].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[0].products[30].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[0].products[31].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[0].products[32].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[0].products[33].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[0].products[34].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[0].products[35].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[0].products[36].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[0].products[37].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[0].products[38].name}</a>
+        </p>
+    `
+
+    //Датчики влажности и температуры воздуха
+
+    subcategory4.innerHTML += `
+        <span class="style-subcategory">${content[3].items[1].name}</span><br>
+        <div>
+            <span>Приборы:</span>
+        </div>
+    `
+
+    for(let key in content) {
+
+        subcategory4.innerHTML += `
+            <p>
+                <a href="#">${content[3].items[1].products[key].name}</a>
+            </p>
+        `
+    }
+
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[1].products[5].name}</a>
+        </p>
+    `
+
+    //Преобразователи давления
+
+    subcategory4.innerHTML += `
+        <span class="style-subcategory">${content[3].items[2].name}</span><br>
+        <div>
+            <span>Приборы:</span>
+        </div>
+    `
+
+    for(let key in content) {
+
+        subcategory4.innerHTML += `
+            <p>
+                <a href="#">${content[3].items[2].products[key].name}</a>
+            </p>
+        `
+    }
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[2].products[5].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[2].products[6].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[2].products[7].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[2].products[8].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[2].products[9].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[2].products[10].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[2].products[11].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[2].products[12].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[2].products[13].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[2].products[14].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[2].products[15].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[2].products[16].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[2].products[17].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[2].products[18].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[2].products[19].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[2].products[20].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[2].products[21].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[2].products[22].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[2].products[23].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[2].products[24].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[2].products[25].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[2].products[26].name}</a>
+        </p>
+    `
+
+    //Датчики уровня
+
+    subcategory4.innerHTML += `
+        <span class="style-subcategory">${content[3].items[3].name}</span><br>
+        <div>
+            <span>Приборы:</span>
+        </div>
+    `
+
+    for(let key in content) {
+
+        subcategory4.innerHTML += `
+            <p>
+                <a href="#">${content[3].items[3].products[key].name}</a>
+            </p>
+        `
+    }
+
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[3].products[5].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[3].products[6].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[3].products[7].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[3].products[8].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[3].products[9].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[3].products[10].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[3].products[11].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[3].products[12].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[3].products[13].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[3].products[14].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[3].products[15].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[3].products[16].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[3].products[17].name}</a>
+        </p>
+    `
+
+    //Датчики газа
+
+    subcategory4.innerHTML += `
+        <span class="style-subcategory">${content[3].items[4].name}</span><br>
+        <div>
+            <span>Приборы:</span>
+        </div>
+    `
+
+    for(let key in content) {
+
+        subcategory4.innerHTML += `
+            <p>
+                <a href="#">${content[3].items[4].products[key].name}</a>
+            </p>
+        `
+    }
+
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[4].products[5].name}</a>
+        </p>
+    `
+
+    //Бесконтактные датчики
+
+    subcategory4.innerHTML += `
+        <span class="style-subcategory">${content[3].items[5].name}</span><br>
+        <div>
+            <span>Приборы:</span>
+        </div>
+    `
+
+    for(let key in content) {
+
+        subcategory4.innerHTML += `
+            <p>
+                <a href="#">${content[3].items[5].products[key].name}</a>
+            </p>
+        `
+    }
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[5].products[5].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[5].products[6].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[5].products[7].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[5].products[8].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[5].products[9].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[5].products[10].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[5].products[11].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[5].products[12].name}</a>
+        </p>
+    `
+
+    //Барьеры искрозащиты
+
+    subcategory4.innerHTML += `
+        <span class="style-subcategory">${content[3].items[6].name}</span><br>
+        <div>
+            <span>Приборы:</span>
+        </div>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[6].products[0].name}</a>
+        </p>
+    `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[6].products[1].name}</a>
+        </p>
+    `
+
+
+
 
 
 
