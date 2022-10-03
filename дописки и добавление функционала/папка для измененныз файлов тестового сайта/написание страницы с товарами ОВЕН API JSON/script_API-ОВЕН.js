@@ -29,31 +29,9 @@ async function getResponse(){
             <span>Приборы:</span>
         </div>
     `
-
-    /*for (let i = 0; i < content.length; i++) {
-        let c = content[i];
-        for (let k = 0; k < c.length; k++) {
-            console.log(c[k]);
-        }
-    }*/
-
-    /*for(let i = 0; i < content.length; i++) {
-        subcategory.innerHTML += `
-            <p>
-                <a href="#">${content[0].items[0].products[i].name}</a>
-            </p>
-        `
-    }*/
+    let keys = Object.keys(content[0].items[0].products);
     
-    /*content.forEach(({name}) => {
-        subcategory.innerHTML += `
-            <p>
-                <a href="#">${content[0].items[name]}</a>
-            </p>
-        `
-    });*/
-    
-    for(let key in content) {
+    for(let key in keys) {
 
         subcategory.innerHTML += `
             <p>
@@ -62,9 +40,7 @@ async function getResponse(){
         `
     }
 
-
-
-    subcategory.innerHTML += `
+    /*subcategory.innerHTML += `
             <p>
                 <a href="#">${content[0].items[0].products[0].name}</a>
             </p>
@@ -149,7 +125,7 @@ async function getResponse(){
             <p>
                 <a href="#">${content[0].items[0].products[28].name}</a>
             </p>
-        `
+        `*/
     //Для ГВС, отопления, вентиляции и котельных
 
     subcategory.innerHTML += `
