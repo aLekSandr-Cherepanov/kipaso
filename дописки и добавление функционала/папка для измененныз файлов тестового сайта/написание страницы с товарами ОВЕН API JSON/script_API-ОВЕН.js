@@ -135,7 +135,9 @@ async function getResponse(){
             </div>
         `
 
-    for(let key in content) {
+    let keysGVS = Object.keys(content[0].items[1].products);
+
+    for(let key in keysGVS) {
 
         subcategory.innerHTML += `
             <p>
@@ -153,15 +155,16 @@ async function getResponse(){
             </div>
         `
 
+    let keysFood = Object.keys(content[0].items[2].products);
 
-    subcategory.innerHTML += `
-        <p>
-            <a href="#">${content[0].items[2].products[0].name}</a>
-        </p>
-        <p>
-            <a href="#">${content[0].items[2].products[1].name}</a>
-        </p>
-    `
+    for(let key in keysFood) {
+
+        subcategory.innerHTML += `
+            <p>
+                <a href="#">${content[0].items[2].products[key].name}</a>
+            </p>
+        `
+    }
 
     //Счетчики, таймеры, тахометры
 
@@ -172,7 +175,9 @@ async function getResponse(){
             </div>
         `
 
-    for(let key in content) {
+    let keysCounters = Object.keys(content[0].items[3].products);
+
+    for(let key in keysCounters) {
 
         subcategory.innerHTML += `
             <p>
@@ -190,7 +195,9 @@ async function getResponse(){
             </div>
         `
 
-    for(let key in content) {
+    let keysPumps = Object.keys(content[0].items[4].products);
+
+    for(let key in keysPumps) {
 
         subcategory.innerHTML += `
             <p>
@@ -209,20 +216,15 @@ async function getResponse(){
         `
 
 
-    subcategory.innerHTML += `
-        <p>
-            <a href="#">${content[0].items[5].products[0].name}</a>
-        </p>
-        <p>
-            <a href="#">${content[0].items[5].products[1].name}</a>
-        </p>
-        <p>
-            <a href="#">${content[0].items[5].products[2].name}</a>
-        </p>
-        <p>
-            <a href="#">${content[0].items[5].products[3].name}</a>
-        </p>
-    `
+    let keysNetworks = Object.keys(content[0].items[5].products);
+
+    for(let key in keysNetworks) {
+        subcategory.innerHTML += `
+            <p>
+                <a href="#">${content[0].items[5].products[key].name}</a>
+            </p>
+        `
+    }
 
     //Архиваторы
 
@@ -234,17 +236,15 @@ async function getResponse(){
         `
 
 
-    subcategory.innerHTML += `
-        <p>
-            <a href="#">${content[0].items[6].products[0].name}</a>
-        </p>
-        <p>
-            <a href="#">${content[0].items[6].products[1].name}</a>
-        </p>
-        <p>
-            <a href="#">${content[0].items[6].products[2].name}</a>
-        </p>
-    `
+    let keysArchivers = Object.keys(content[0].items[6].products);
+
+    for(let key in keysArchivers) {
+        subcategory.innerHTML += `
+            <p>
+                <a href="#">${content[0].items[6].products[key].name}</a>
+            </p>
+        `
+    }        
 
     //Ручные задатчики сигналов
 
@@ -255,14 +255,15 @@ async function getResponse(){
             </div>
         `
 
-    subcategory.innerHTML += `
-        <p>
-            <a href="#">${content[0].items[7].products[0].name}</a>
-        </p>
-        <p>
-            <a href="#">${content[0].items[7].products[1].name}</a>
-        </p>
-    `
+    let keysSetters = Object.keys(content[0].items[7].products);
+
+    for(let key in keysSetters) {
+        subcategory.innerHTML += `
+            <p>
+                <a href="#">${content[0].items[7].products[key].name}</a>
+            </p>
+        `
+    }
 
     //Дополнительные устройства
 
@@ -273,7 +274,9 @@ async function getResponse(){
         </div>
     `
 
-    for(let key in content) {
+    let keysAdditionalDevices = Object.keys(content[0].items[8].products);
+
+    for(let key in keysAdditionalDevices) {
 
         subcategory.innerHTML += `
             <p>
