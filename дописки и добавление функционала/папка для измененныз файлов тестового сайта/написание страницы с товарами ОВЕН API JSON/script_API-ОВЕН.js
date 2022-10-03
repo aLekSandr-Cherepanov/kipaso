@@ -39,93 +39,7 @@ async function getResponse(){
             </p>
         `
     }
-
-    /*subcategory.innerHTML += `
-            <p>
-                <a href="#">${content[0].items[0].products[0].name}</a>
-            </p>
-            <p>
-                <a href="#">${content[0].items[0].products[1].name}</a>
-            </p>
-            <p>
-                <a href="#">${content[0].items[0].products[2].name}</a>
-            </p>
-            <p>
-                <a href="#">${content[0].items[0].products[3].name}</a>
-            </p>
-            <p>
-                <a href="#">${content[0].items[0].products[4].name}</a>
-            </p>
-            <p>
-                <a href="#">${content[0].items[0].products[5].name}</a>
-            </p>
-            <p>
-                <a href="#">${content[0].items[0].products[6].name}</a>
-            </p>
-            <p>
-                <a href="#">${content[0].items[0].products[7].name}</a>
-            </p>
-            <p>
-                <a href="#">${content[0].items[0].products[8].name}</a>
-            </p>
-            <p>
-                <a href="#">${content[0].items[0].products[9].name}</a>
-            </p>
-            <p>
-                <a href="#">${content[0].items[0].products[10].name}</a>
-            </p>
-            <p>
-                <a href="#">${content[0].items[0].products[12].name}</a>
-            </p>
-            <p>
-                <a href="#">${content[0].items[0].products[13].name}</a>
-            </p>
-            <p>
-                <a href="#">${content[0].items[0].products[14].name}</a>
-            </p>
-            <p>
-                <a href="#">${content[0].items[0].products[15].name}</a>
-            </p>
-            <p>
-                <a href="#">${content[0].items[0].products[16].name}</a>
-            </p>
-            <p>
-                <a href="#">${content[0].items[0].products[17].name}</a>
-            </p>
-            <p>
-                <a href="#">${content[0].items[0].products[18].name}</a>
-            </p>
-            <p>
-                <a href="#">${content[0].items[0].products[19].name}</a>
-            </p>
-            <p>
-                <a href="#">${content[0].items[0].products[20].name}</a>
-            </p>
-            <p>
-                <a href="#">${content[0].items[0].products[21].name}</a>
-            </p>
-            <p>
-                <a href="#">${content[0].items[0].products[22].name}</a>
-            </p>
-            <p>
-                <a href="#">${content[0].items[0].products[23].name}</a>
-            </p>
-            <p>
-                <a href="#">${content[0].items[0].products[24].name}</a>
-            </p>
-            <p>
-                <a href="#">${content[0].items[0].products[25].name}</a>
-            </p>
-            <p>
-                <a href="#">${content[0].items[0].products[26].name}</a>
-            </p>
-            <p>
-                <a href="#">${content[0].items[0].products[27].name}</a>
-            </p>
-            <p>
-                <a href="#">${content[0].items[0].products[28].name}</a>
-            </p>
-        `*/
+    
     //Для ГВС, отопления, вентиляции и котельных
 
     subcategory.innerHTML += `
@@ -955,16 +869,16 @@ async function getResponse(){
         </div>
     `
 
-    subcategory5.innerHTML += `
-        <p>
-            <a href="#">${content[4].items[3].products[0].name}</a>
-        </p>
-    `
-    subcategory5.innerHTML += `
-        <p>
-            <a href="#">${content[4].items[3].products[1].name}</a>
-        </p>
-    `
+    let keysConfigurators = Object.keys(content[4].items[3].products);
+
+    for(let key in keysConfigurators) {
+
+        subcategory5.innerHTML += `
+            <p>
+                <a href="#">${content[4].items[3].products[key].name}</a>
+            </p>
+        `
+    }
 
     //Среда программирования CODESYS
 
@@ -975,16 +889,16 @@ async function getResponse(){
         </div>
     `
 
-    subcategory5.innerHTML += `
-        <p>
-            <a href="#">${content[4].items[4].products[0].name}</a>
-        </p>
-    `
-    subcategory5.innerHTML += `
-        <p>
-            <a href="#">${content[4].items[4].products[1].name}</a>
-        </p>
-    `
+    let keysCODESYS = Object.keys(content[4].items[4].products);
+
+    for(let key in keysCODESYS) {
+
+        subcategory5.innerHTML += `
+            <p>
+                <a href="#">${content[4].items[4].products[key].name}</a>
+            </p>
+        `
+    }
 
     //Программное обеспечение OwenLogic
 
@@ -995,11 +909,16 @@ async function getResponse(){
         </div>
     `
 
-    subcategory5.innerHTML += `
-        <p>
-            <a href="#">${content[4].items[5].products[0].name}</a>
-        </p>
-    `
+    let keysOwenLogic = Object.keys(content[4].items[5].products);
+
+    for(let key in keysOwenLogic) {
+
+        subcategory5.innerHTML += `
+            <p>
+                <a href="#">${content[4].items[5].products[key].name}</a>
+            </p>
+        `
+    }
 
     //Драйверы и библиотеки ОВЕН
 
@@ -1010,11 +929,16 @@ async function getResponse(){
         </div>
     `
 
-    subcategory5.innerHTML += `
-        <p>
-            <a href="#">${content[4].items[6].products[0].name}</a>
-        </p>
-    `
+    let keysDrivers = Object.keys(content[4].items[6].products);
+
+    for(let key in keysDrivers) {
+
+        subcategory5.innerHTML += `
+            <p>
+                <a href="#">${content[4].items[6].products[key].name}</a>
+            </p>
+        `
+    }
 
     //Коммутаторы
 
@@ -1024,12 +948,16 @@ async function getResponse(){
             <span>Приборы:</span>
         </div>
     `
+    let keysSwitches = Object.keys(content[4].items[7].products);
 
-    subcategory5.innerHTML += `
-        <p>
-            <a href="#">${content[4].items[7].products[0].name}</a>
-        </p>
-    `
+    for(let key in keysSwitches) {
+
+        subcategory5.innerHTML += `
+            <p>
+                <a href="#">${content[4].items[7].products[key].name}</a>
+            </p>
+        `
+    }
 
     //Преобразователи интерфейсов и повторители
 
@@ -1040,7 +968,9 @@ async function getResponse(){
         </div>
     `
 
-    for(let key in content) {
+    let keysConvertersInterface = Object.keys(content[4].items[8].products);
+
+    for(let key in keysConvertersInterface) {
 
         subcategory5.innerHTML += `
             <p>
@@ -1058,11 +988,17 @@ async function getResponse(){
         </div>
     `
 
-    subcategory5.innerHTML += `
-        <p>
-            <a href="#">${content[4].items[9].products[0].name}</a>
-        </p>
-    `
+    let keysModems = Object.keys(content[4].items[9].products);
+
+    for(let key in keysModems) {
+
+        subcategory5.innerHTML += `
+            <p>
+                <a href="#">${content[4].items[9].products[key].name}</a>
+            </p>
+        `
+    }
+    
 
     //PLC-модемы
 
@@ -1073,11 +1009,16 @@ async function getResponse(){
         </div>
     `
 
-    subcategory5.innerHTML += `
-        <p>
-            <a href="#">${content[4].items[10].products[0].name}</a>
-        </p>
-    `
+    let keysPLC = Object.keys(content[4].items[10].products);
+
+    for(let key in keysPLC) {
+
+        subcategory5.innerHTML += `
+            <p>
+                <a href="#">${content[4].items[10].products[key].name}</a>
+            </p>
+        `
+    }
 
     //Аксессуары
 
@@ -1087,15 +1028,17 @@ async function getResponse(){
             <span>Приборы:</span>
         </div>
     `
+    let keysAccessoriesFooter = Object.keys(content[4].items[11].products);
 
-    subcategory5.innerHTML += `
-        <p>
-            <a href="#">${content[4].items[11].products[0].name}</a>
-        </p>
-    `
+    for(let key in keysAccessoriesFooter) {
 
-
-
+        subcategory5.innerHTML += `
+            <p>
+                <a href="#">${content[4].items[11].products[key].name}</a>
+            </p>
+        `
+    }
+    
     console.log(content)
 }
 getResponse()
