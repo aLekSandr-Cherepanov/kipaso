@@ -3,17 +3,22 @@ async function getResponse(){
     let content = await response.json();
     content = content.categories;
     //поиск нужных элементов
-    let data = document.querySelector('.wrapper-tovar');
     let product = document.querySelector('.hero-photo');
     let secondary = document.querySelector('.secondary-photo');
     let price = document.querySelector('.container-price');
+    let desc = document.querySelector('.block-desc');
+    let header = document.querySelector('.header-product');
+    let specs = document.querySelector('.block-specs');
+    let docs = document.querySelector('.block-docs');
+    let headerDocumentation = document.querySelector('.header-documentation');
 
-    //вывод большей части верстки
-    data.innerHTML += `
-        <div>
-            <p>${content[0].items[0].products[0].desc}</p>
-        </div>
+    //название товара
+    header.innerHTML += `
+
+        <h2>${content[0].items[0].products[0].name}</h2>    
+
     `
+
 
     //вывод главного,большого,фото товара
     product.innerHTML += `
@@ -38,6 +43,31 @@ async function getResponse(){
             <span> Цена:${content[0].items[0].products[0].prices[1].price}</span>
     `
 
+    //блок с инфой из desc(json)
+    desc.innerHTML += `
+        <div>
+            <p>${content[0].items[0].products[0].desc}</p>
+        </div>
+    `
+    //блок с инфой из specs(json)
+    specs.innerHTML += `
+        <div>
+            ${content[0].items[0].products[0].specs}
+        </div>
+    `
+    //блок с инфой из docs(json)
+    docs.innerHTML += `
+        <div>
+            ${content[0].items[0].products[0].docs}
+        </div>
+    `
+
+    //блок с инфой из docs-заголовок документация
+    headerDocumentation.innerHTML += `
+        <div>
+            ${content[0].items[0].products[0].docs[0].name}
+        </div>
+    `
 
 
     console.log(content);
