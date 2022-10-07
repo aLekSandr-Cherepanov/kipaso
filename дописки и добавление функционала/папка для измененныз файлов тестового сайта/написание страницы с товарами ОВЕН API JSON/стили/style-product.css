@@ -10,3 +10,15 @@
 .heder-content {
     display: flex;
 }
+
+.price-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container-price {
+    font-size: 30px;
+    text-align: right;
+    margin-bottom: 30px;
+}
