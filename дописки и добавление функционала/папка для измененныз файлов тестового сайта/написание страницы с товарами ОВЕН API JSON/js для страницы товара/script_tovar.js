@@ -28,11 +28,11 @@ async function getResponse(){
 
         secondary.innerHTML += `
         <div>
-            <img class="style-photo" src="${content[0].items[0].products[0].images[key].src}">
+            <img src="${content[0].items[0].products[0].images[key].src}">
         </div>
     `
     }
-    
+
     //вывод цены
     price.innerHTML += `
             <span> Цена:${content[0].items[0].products[0].prices[1].price}</span>
