@@ -31,3 +31,7 @@
     text-align: right;
     margin-bottom: 30px;
 }
+
+.block-none {
+    display: none;
+}

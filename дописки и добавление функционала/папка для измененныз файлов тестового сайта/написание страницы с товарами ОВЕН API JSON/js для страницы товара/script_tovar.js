@@ -9,8 +9,14 @@ async function getResponse(){
     let desc = document.querySelector('.block-desc');
     let header = document.querySelector('.header-product');
     let specs = document.querySelector('.block-specs');
-    let docs = document.querySelector('.block-docs');
     let headerDocumentation = document.querySelector('.header-documentation');
+    let contentDocumentation = document.querySelector('.content-documentation');
+    let headerCertificates = document.querySelector('.header-certificates');
+    let contentCertificates = document.querySelector('.content-certificates');
+    let headerPo = document.querySelector('.header-po');
+    let contentPo = document.querySelector('.content-po');
+    /*let titlePrice = document.querySelector('.title-price');*/
+    let wrapperPrice = document.querySelector('.wrapper-price');
 
     //название товара
     header.innerHTML += `
@@ -55,12 +61,6 @@ async function getResponse(){
             ${content[0].items[0].products[0].specs}
         </div>
     `
-    //блок с инфой из docs(json)
-    docs.innerHTML += `
-        <div>
-            ${content[0].items[0].products[0].docs}
-        </div>
-    `
 
     //блок с инфой из docs-заголовок документация
     headerDocumentation.innerHTML += `
@@ -68,6 +68,74 @@ async function getResponse(){
             ${content[0].items[0].products[0].docs[0].name}
         </div>
     `
+
+    //содержание блока документация
+    let doc = Object.keys(content[0].items[0].products[0].docs[0].items);
+    for(let key in doc) {
+
+        contentDocumentation.innerHTML += `
+        <a href="${content[0].items[0].products[0].docs[0].items[key].link}">
+            <span>${content[0].items[0].products[0].docs[0].items[key].name}</span>
+        </a><br>
+    `
+    }
+
+    //блок с инфой из docs-заголовок сертификаты
+    headerCertificates.innerHTML += `
+        <div>
+            ${content[0].items[0].products[0].docs[1].name}
+        </div>
+    `
+
+    //содержание блока сертификаты
+    let certificates = Object.keys(content[0].items[0].products[0].docs[1].items);
+    for(let key in certificates) {
+
+        contentCertificates.innerHTML += `
+        <a href="${content[0].items[0].products[0].docs[1].items[key].link}">
+            <span>${content[0].items[0].products[0].docs[1].items[key].name}</span>
+        </a><br>
+    `
+    }
+
+    //блок с инфой из docs-заголовок ПО
+    headerPo.innerHTML += `
+        <div>
+            ${content[0].items[0].products[0].docs[2].name}
+        </div>
+    `
+
+    //содержание блока ПО
+    let keysPo = Object.keys(content[0].items[0].products[0].docs[2].items);
+    for(let key in keysPo) {
+
+        contentPo.innerHTML += `
+        <a href="${content[0].items[0].products[0].docs[2].items[key].link}">
+            <span>${content[0].items[0].products[0].docs[2].items[key].name}</span>
+        </a><br>
+    `
+    }
+
+    //блок с инфой из prices загаловок
+    /*titlePrice.innerHTML += `
+        <div>
+            ${content[0].items[0].products[0].docs[2].name}
+        </div>
+    `*/
+
+    //содержание блока prices 
+    let keysPrice = Object.keys(content[0].items[0].products[0].prices);
+    for(let key in keysPrice) {
+
+        wrapperPrice.innerHTML += `
+        <div>${content[0].items[0].products[0].prices[key].name}</div>
+        <div>${content[0].items[0].products[0].prices[key].price}</div>
+    `
+    }
+
+    //добавил класс блоку,для того чтобы его скрыть из верстки
+    document.querySelector('.table-base').classList.add('block-none');
+    
 
 
     console.log(content);
