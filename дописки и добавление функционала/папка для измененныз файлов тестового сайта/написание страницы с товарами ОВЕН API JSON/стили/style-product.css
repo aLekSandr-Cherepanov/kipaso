@@ -35,3 +35,8 @@
 .block-none {
     display: none;
 }
+
+.wrapper-price_block {
+    display: flex;
+    justify-content: space-between;
+}
