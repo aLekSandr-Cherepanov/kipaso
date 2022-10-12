@@ -25,11 +25,11 @@ async function getResponse(){
 
     `
 
-
+    let testPerem = content[0].items[0].products[10].image;
     //вывод главного,большого,фото товара
     product.innerHTML += `
         <div>
-            <img class="style-photo" src="${content[0].items[0].products[10].image}">
+            <img class="style-photo" src="${testPerem}">
         </div>
     `
 
@@ -140,6 +140,9 @@ async function getResponse(){
         </div>
     `
     }
+
+    //добавил класс блоку,для того чтобы его скрыть из верстки
+    document.querySelector('.table-base').classList.add('block-none');
 
     
 
