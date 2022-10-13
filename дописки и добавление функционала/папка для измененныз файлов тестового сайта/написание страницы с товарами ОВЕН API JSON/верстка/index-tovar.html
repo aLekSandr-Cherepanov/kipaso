@@ -1,9 +1,11 @@
 
 <div class="container-content">
+    <!--блок с заголовком товара-->
     <div class="header-product">
-
+        <h2 class="title-product">Тут будет заголово товара</h2>
     </div>
-    <div class="heder-content">
+
+    <div class="header-content">
         <div class="product_photo">
             <!--обертка для главных фото-->
             <div class="hero-photo">
@@ -16,12 +18,33 @@
         <div class="price-left">
             <!--блок слева от главного фото,с ценой-->
             <div>
-                <h2>Заглушка Заглушка Заглушка Заглушка Заглушка Заглушка  </h2>
+                <h2>Заглушка Заглушка Заглушка Заглушка Заглушка Заглушка</h2>
             </div>
             <div class="container-price">
                 <!--блок с ценой-->
             </div>
         </div>
+        <div class="base-info__sidebar">
+                <div class="base-info__feedback product-feedback">
+                  <form action="[[~223]]" method="get">
+                    <div class="product-feedback__title">Задать вопрос</div>
+                    <div class="product-feedback__mods">
+                      <select class="product-feedback__select" name="pribor">
+                        [[shk_include?
+                        &file=`core/components/shopkeeper/elements/snippets/param_edit_table.php`
+                        &tvValue=`[[*mods]]`
+                        &tpl=`new_properties_top`
+                        ]]
+                        <option class="product-feedback__option" value="[[*pagetitle]]">[[*pagetitle]]</option>
+                      </select>
+                    </div>
+                    <div class="product-feedback__button-wrap">
+                      <button class="button product-feedback__button" type="submit">Запрос</button>
+                    </div>
+                  </form>
+                </div>
+                [[!new_price_switch]]
+              </div>
     </div>
     <div class="wrapper-tovar">
       <!--контент из json овен-->
@@ -69,10 +92,12 @@
                 <!--заголовок блока цена-->
                 <h2>Цены</h2>
             </div>
-            <div class="wrapper-price">
+            <div>
                 <!--список цен-->
+                <div class="wrapper-price">
+                    
+                </div>
             </div>
         </div>
     </div>
 </div>
-<script src="/assets/templates/new/js/script_tovar.js"></script>
