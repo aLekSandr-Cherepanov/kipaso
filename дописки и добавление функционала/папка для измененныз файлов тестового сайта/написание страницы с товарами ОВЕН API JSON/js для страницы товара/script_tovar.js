@@ -3,11 +3,11 @@ async function getResponse(){
     let content = await response.json();
     content = content.categories;
     //поиск нужных элементов
+    let title = document.querySelector('.title-product');
     let product = document.querySelector('.hero-photo');
     let secondary = document.querySelector('.secondary-photo');
     let price = document.querySelector('.container-price');
     let desc = document.querySelector('.block-desc');
-    let header = document.querySelector('.header-product');
     let specs = document.querySelector('.block-specs');
     let headerDocumentation = document.querySelector('.header-documentation');
     let contentDocumentation = document.querySelector('.content-documentation');
@@ -19,17 +19,15 @@ async function getResponse(){
     let wrapperPrice = document.querySelector('.wrapper-price');
 
     //название товара
-    header.innerHTML += `
+    title.innerHTML += `
 
-        <h2>${content[0].items[0].products[10].name}</h2>    
+        ${content[0].items[0].products[0].name} 
 
     `
-
-    let testPerem = content[0].items[0].products[10].image;
     //вывод главного,большого,фото товара
     product.innerHTML += `
         <div>
-            <img class="style-photo" src="${testPerem}">
+            <img class="style-photo" src="${content[0].items[0].products[10].image}">
         </div>
     `
 

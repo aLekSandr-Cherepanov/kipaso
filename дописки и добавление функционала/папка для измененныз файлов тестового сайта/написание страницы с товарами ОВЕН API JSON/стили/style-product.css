@@ -10,8 +10,7 @@
     width: 325px;
 }
 
-.secondary-photo {
-    width: 25vw;
+.block-secondary-photo {
     display: flex;
 }
 
@@ -39,4 +38,12 @@
 .wrapper-price_block {
     display: flex;
     justify-content: space-between;
+}
+
+.hero-photo {
+    width: 400px;
+}
+
+.secondary-photo {
+    width: 7vw;
 }

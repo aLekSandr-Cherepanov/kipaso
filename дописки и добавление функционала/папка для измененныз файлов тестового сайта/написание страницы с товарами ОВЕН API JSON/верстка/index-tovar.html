@@ -2,57 +2,80 @@
 <div class="container-content">
     <!--блок с заголовком товара-->
     <div class="header-product">
-        <h2 class="title-product">Тут будет заголово товара</h2>
+        <h2 class="title-product"><!--Тут заголовок товара--></h2>
     </div>
-
+    <!--блок с фото ценой и прайс-листом-->
     <div class="header-content">
+        <!--блок с фото-->
         <div class="product_photo">
-            <!--обертка для главных фото-->
-            <div class="hero-photo">
-                <!--Главное фото-->
+            <!--Главное фото-->
+            <div class="block-hero-photo">
+                <a href="">
+                    <img class="hero-photo" src="https://owen.ru/thumbs/210/trm1_standard___a7dd82d0-554x300-d.png" alt="">
+                </a>
             </div>
-            <div class="secondary-photo">
+            <div class="block-secondary-photo">
                 <!--Второстепенные фото-->
+                <div class="wrapper-link-photo">
+                    <a class="link-photo" href="">
+                        <img class="secondary-photo" src="https://owen.ru/thumbs/210/trm1_standard___a7dd82d0-554x300-d.png" alt="">
+                    </a>
+                </div>
+                <div class="wrapper-link-photo">
+                    <a class="link-photo" href="">
+                        <img class="secondary-photo" src="https://owen.ru/thumbs/210/trm1_standard___a7dd82d0-554x300-d.png" alt="">
+                    </a>
+                </div>
             </div>
         </div>
         <div class="price-left">
             <!--блок слева от главного фото,с ценой-->
+            <!--////////////////////////////////////-->
             <div>
                 <h2>Заглушка Заглушка Заглушка Заглушка Заглушка Заглушка</h2>
             </div>
+            <!--блок с ценой-->
             <div class="container-price">
-                <!--блок с ценой-->
+                <span class="wrapper-price">
+                    Цена:<p class="price">2500руб</p>
+                </span>
             </div>
         </div>
         <div class="base-info__sidebar">
-                <div class="base-info__feedback product-feedback">
-                  <form action="[[~223]]" method="get">
-                    <div class="product-feedback__title">Задать вопрос</div>
-                    <div class="product-feedback__mods">
-                      <select class="product-feedback__select" name="pribor">
-                        [[shk_include?
-                        &file=`core/components/shopkeeper/elements/snippets/param_edit_table.php`
-                        &tvValue=`[[*mods]]`
-                        &tpl=`new_properties_top`
-                        ]]
-                        <option class="product-feedback__option" value="[[*pagetitle]]">[[*pagetitle]]</option>
-                      </select>
-                    </div>
-                    <div class="product-feedback__button-wrap">
-                      <button class="button product-feedback__button" type="submit">Запрос</button>
-                    </div>
-                  </form>
-                </div>
-                [[!new_price_switch]]
-              </div>
+            <div class="base-info__feedback product-feedback">
+                <form action="[[~223]]" method="get">
+                  <div class="product-feedback__title">Задать вопрос</div>
+                  <div class="product-feedback__mods">
+                    <select class="product-feedback__select" name="pribor">
+                      [[shk_include?
+                      &file=`core/components/shopkeeper/elements/snippets/param_edit_table.php`
+                      &tvValue=`[[*mods]]`
+                      &tpl=`new_properties_top`
+                      ]]
+                      <option class="product-feedback__option" value="[[*pagetitle]]">[[*pagetitle]]</option>
+                    </select>
+                  </div>
+                  <div class="product-feedback__button-wrap">
+                    <button class="button product-feedback__button" type="submit">Запрос</button>
+                  </div>
+                </form>
+            </div>
+            [[!new_price_switch]]
+        </div>
     </div>
     <div class="wrapper-tovar">
       <!--контент из json овен-->
-        <div class="block-desc">
+        <div class="wrapper-block-desc">
             <!--блок с инфой из desc(json)-->
+            <div class="block-desc">
+
+            </div>
         </div>
-        <div class="block-specs">
-            <!--блок с инфой из specs-->
+        <!--блок с инфой из specs-->
+        <div class="wrapper-block-specs">
+            <div class="block-specs">
+
+            </div>
         </div>
         <div class="block-docs">
             <h2>Документация и ПО</h2>
