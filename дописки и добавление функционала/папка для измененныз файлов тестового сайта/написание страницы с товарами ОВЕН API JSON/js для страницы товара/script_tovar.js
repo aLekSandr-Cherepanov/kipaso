@@ -4,9 +4,9 @@ async function getResponse(){
     content = content.categories;
     //поиск нужных элементов
     let title = document.querySelector('.title-product');
-    let product = document.querySelector('.hero-photo');
-    let secondary = document.querySelector('.secondary-photo');
-    let price = document.querySelector('.container-price');
+    let product = document.querySelector('.link-photo');
+    let secondary = document.querySelector('.block-secondary-photo');
+    let price = document.querySelector('.price');
     let desc = document.querySelector('.block-desc');
     let specs = document.querySelector('.block-specs');
     let headerDocumentation = document.querySelector('.header-documentation');
@@ -26,40 +26,34 @@ async function getResponse(){
     `
     //вывод главного,большого,фото товара
     product.innerHTML += `
-        <div>
-            <img class="style-photo" src="${content[0].items[0].products[10].image}">
-        </div>
+        <img class="hero-photo" src="${content[0].items[0].products[0].image}" alt="2ТРМ0">
     `
 
     //вывод маленьгих фото
-    let keys = Object.keys(content[0].items[0].products[10].images);
+    let keys = Object.keys(content[0].items[0].products[0].images);
     for(let key in keys) {
-
         secondary.innerHTML += `
-        <div>
-            <img src="${content[0].items[0].products[10].images[key].src}">
+        <div class="wrapper-link-photo">
+            <a class="link-photo" href="">
+                <img class="secondary-photo" src="${content[0].items[0].products[0].images[key].src}" alt="2ТРМ0">
+            </a>
         </div>
     `
     }
 
     //вывод цены
     price.innerHTML += `
-            <span> Цена:${content[0].items[0].products[10].prices[0].price}</span>
+        ${content[0].items[0].products[0].prices[0].price}
     `
 
     //блок с инфой из desc(json)
     desc.innerHTML += `
-        <div>
-            <p>${content[0].items[0].products[10].desc}</p>
-        </div>
+        ${content[0].items[0].products[0].desc}
     `
     //блок с инфой из specs(json)
     specs.innerHTML += `
-        <div>
-            ${content[0].items[0].products[10].specs}
-        </div>
+        ${content[0].items[0].products[10].specs}
     `
-
     //блок с инфой из docs-заголовок документация
     headerDocumentation.innerHTML += `
         <div>
