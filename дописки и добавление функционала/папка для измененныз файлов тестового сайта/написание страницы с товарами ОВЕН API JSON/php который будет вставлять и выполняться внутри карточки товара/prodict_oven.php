@@ -5,7 +5,7 @@
 
     //foreach($get_data as $g): 
     
-    $test = get_data[0].items[0].products[10].name;
+    $test = ;
     
     print($test);
 }
