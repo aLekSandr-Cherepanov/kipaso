@@ -4,7 +4,7 @@ async function getResponse(){
     content = content.categories;
     //поиск нужных элементов
     let title = document.querySelector('.title-product');
-    let product = document.querySelector('.link-photo');
+    let product = document.querySelector('.block-hero-photo');
     let secondary = document.querySelector('.block-secondary-photo');
     let price = document.querySelector('.price');
     let desc = document.querySelector('.block-desc');
@@ -15,7 +15,6 @@ async function getResponse(){
     let contentCertificates = document.querySelector('.content-certificates');
     let headerPo = document.querySelector('.header-po');
     let contentPo = document.querySelector('.content-po');
-    /*let titlePrice = document.querySelector('.title-price');*/
     let wrapperPrice = document.querySelector('.wrapper-price');
 
     //название товара
@@ -26,7 +25,9 @@ async function getResponse(){
     `
     //вывод главного,большого,фото товара
     product.innerHTML += `
-        <img class="hero-photo" src="${content[0].items[0].products[0].image}" alt="2ТРМ0">
+        <a class="link-photo" href="${content[0].items[0].products[0].image}">
+            <img class="hero-photo" src="${content[0].items[0].products[0].image}" alt="2ТРМ0">
+        </a>
     `
 
     //вывод маленьгих фото
@@ -74,9 +75,7 @@ async function getResponse(){
 
     //блок с инфой из docs-заголовок сертификаты
     headerCertificates.innerHTML += `
-        <div>
-            ${content[0].items[0].products[0].docs[1].name}
-        </div>
+        ${content[0].items[0].products[0].docs[1].name}
     `
 
     //содержание блока сертификаты
@@ -84,18 +83,18 @@ async function getResponse(){
     for(let key in certificates) {
 
         contentCertificates.innerHTML += `
-        <a href="${content[0].items[0].products[0].docs[1].items[key].link}">
-            <span>${content[0].items[0].products[0].docs[1].items[key].name}</span>
-        </a><br>
+        <div class="block-name-certificates">
+            <a class="link-certificates" href="${content[0].items[0].products[0].docs[1].items[key].link}">
+                <span class="name-certificates">${content[0].items[0].products[0].docs[1].items[key].name}</span>
+            </a><br>
+        </div>
     `
     }
     //функция нужна чтобы код шел дальше если блока не будет на других товарах
     function blockPo(){
         //блок с инфой из docs-заголовок ПО
         headerPo.innerHTML += `
-            <div>
                 ${content[0].items[0].products[0].docs[2].name}
-            </div>
         `
 
         //содержание блока ПО
@@ -103,12 +102,15 @@ async function getResponse(){
         for(let key in keysPo) {
 
             contentPo.innerHTML += `
-            <a href="${content[0].items[0].products[0].docs[2].items[key].link}">
-                <span>${content[0].items[0].products[0].docs[2].items[key].name}</span>
-            </a><br>
+            <div class="block-name-po">
+                <a class="link-po" href="${content[0].items[0].products[0].docs[2].items[key].link}">
+                    <span class="name-po">${content[0].items[0].products[0].docs[2].items[key].name}</span>
+                </a><br>
+            </div>
         `
         }
     }
+    blockPo();
 
     if (blockPo===false){
         return true;
@@ -120,16 +122,14 @@ async function getResponse(){
 
         wrapperPrice.innerHTML += `
         <div class="wrapper-price_block">
-            <div>${content[0].items[0].products[0].prices[key].name}</div>
-            <div>${content[0].items[0].products[0].prices[key].price}</div>
+            <div class="name-prodict">${content[0].items[0].products[0].prices[key].name}</div>
+            <div class="price-prodict">${content[0].items[0].products[0].prices[key].price}</div>
         </div>
     `
     }
 
     //добавил класс блоку,для того чтобы его скрыть из верстки
     document.querySelector('.table-base').classList.add('block-none');
-
-    
 
 
     console.log(content);
