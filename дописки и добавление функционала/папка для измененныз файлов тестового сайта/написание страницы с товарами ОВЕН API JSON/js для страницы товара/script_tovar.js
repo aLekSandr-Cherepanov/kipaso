@@ -34,7 +34,7 @@ async function getResponse(){
     for(let key in keys) {
         secondary.innerHTML += `
         <div class="wrapper-link-photo">
-            <a class="link-photo" href="">
+            <a class="link-photo" href="${content[0].items[0].products[0].images[key].src}">
                 <img class="secondary-photo" src="${content[0].items[0].products[0].images[key].src}" alt="2ТРМ0">
             </a>
         </div>
@@ -52,40 +52,40 @@ async function getResponse(){
     `
     //блок с инфой из specs(json)
     specs.innerHTML += `
-        ${content[0].items[0].products[10].specs}
+        ${content[0].items[0].products[0].specs}
     `
     //блок с инфой из docs-заголовок документация
     headerDocumentation.innerHTML += `
-        <div>
-            ${content[0].items[0].products[10].docs[0].name}
-        </div>
+        ${content[0].items[0].products[0].docs[0].name}
     `
 
     //содержание блока документация
-    let doc = Object.keys(content[0].items[0].products[10].docs[0].items);
+    let doc = Object.keys(content[0].items[0].products[0].docs[0].items);
     for(let key in doc) {
 
         contentDocumentation.innerHTML += `
-        <a href="${content[0].items[0].products[10].docs[0].items[key].link}">
-            <span>${content[0].items[0].products[10].docs[0].items[key].name}</span>
-        </a><br>
+        <div class="block-name-doc">
+            <a class="link-documentation" href="${content[0].items[0].products[0].docs[0].items[key].link}">
+                <span class="name-documentation">${content[0].items[0].products[0].docs[0].items[key].name}</span>
+            </a><br>
+        <div>
     `
     }
 
     //блок с инфой из docs-заголовок сертификаты
     headerCertificates.innerHTML += `
         <div>
-            ${content[0].items[0].products[10].docs[1].name}
+            ${content[0].items[0].products[0].docs[1].name}
         </div>
     `
 
     //содержание блока сертификаты
-    let certificates = Object.keys(content[0].items[0].products[10].docs[1].items);
+    let certificates = Object.keys(content[0].items[0].products[0].docs[1].items);
     for(let key in certificates) {
 
         contentCertificates.innerHTML += `
-        <a href="${content[0].items[0].products[10].docs[1].items[key].link}">
-            <span>${content[0].items[0].products[10].docs[1].items[key].name}</span>
+        <a href="${content[0].items[0].products[0].docs[1].items[key].link}">
+            <span>${content[0].items[0].products[0].docs[1].items[key].name}</span>
         </a><br>
     `
     }
@@ -94,17 +94,17 @@ async function getResponse(){
         //блок с инфой из docs-заголовок ПО
         headerPo.innerHTML += `
             <div>
-                ${content[0].items[0].products[10].docs[2].name}
+                ${content[0].items[0].products[0].docs[2].name}
             </div>
         `
 
         //содержание блока ПО
-        let keysPo = Object.keys(content[0].items[0].products[10].docs[2].items);
+        let keysPo = Object.keys(content[0].items[0].products[0].docs[2].items);
         for(let key in keysPo) {
 
             contentPo.innerHTML += `
-            <a href="${content[0].items[0].products[10].docs[2].items[key].link}">
-                <span>${content[0].items[0].products[10].docs[2].items[key].name}</span>
+            <a href="${content[0].items[0].products[0].docs[2].items[key].link}">
+                <span>${content[0].items[0].products[0].docs[2].items[key].name}</span>
             </a><br>
         `
         }
@@ -114,21 +114,14 @@ async function getResponse(){
         return true;
     }
 
-    //блок с инфой из prices загаловок
-    /*titlePrice.innerHTML += `
-        <div>
-            ${content[0].items[0].products[0].docs[2].name}
-        </div>
-    `*/
-
     //содержание блока prices 
-    let keysPrice = Object.keys(content[0].items[0].products[10].prices);
+    let keysPrice = Object.keys(content[0].items[0].products[0].prices);
     for(let key in keysPrice) {
 
         wrapperPrice.innerHTML += `
         <div class="wrapper-price_block">
-            <div>${content[0].items[0].products[10].prices[key].name}</div>
-            <div>${content[0].items[0].products[10].prices[key].price}</div>
+            <div>${content[0].items[0].products[0].prices[key].name}</div>
+            <div>${content[0].items[0].products[0].prices[key].price}</div>
         </div>
     `
     }
