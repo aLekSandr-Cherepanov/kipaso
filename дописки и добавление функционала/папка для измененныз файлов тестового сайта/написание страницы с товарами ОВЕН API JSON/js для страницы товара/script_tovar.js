@@ -104,7 +104,7 @@ async function getResponse(){
             contentPo.innerHTML += `
             <div class="block-name-po">
                 <a class="link-po" href="${content[0].items[0].products[0].docs[2].items[key].link}">
-                    <span class="name-po">${content[0].items[0].products[0].docs[2].items[key].name}</span>
+                    <span class="name-po>${content[0].items[0].products[0].docs[2].items[key].name}</span>
                 </a><br>
             </div>
         `
