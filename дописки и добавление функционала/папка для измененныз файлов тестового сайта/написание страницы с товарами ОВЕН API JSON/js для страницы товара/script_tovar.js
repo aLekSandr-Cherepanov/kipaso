@@ -30,13 +30,13 @@ async function getResponse(){
         </a>
     `
 
-    //вывод маленьгих фото
+    //вывод маленьких фото
     let keys = Object.keys(content[0].items[0].products[0].images);
     for(let key in keys) {
         secondary.innerHTML += `
         <div class="wrapper-link-photo">
             <a class="link-photo" href="${content[0].items[0].products[0].images[key].src}">
-                <img class="secondary-photo" src="${content[0].items[0].products[0].images[key].src}" alt="2ТРМ0">
+                <img class="secondary-photo" src="${content[0].items[0].products[0].images[key].src}" alt="${content[0].items[0].products[0].images[key].alt}">
             </a>
         </div>
     `
@@ -135,3 +135,7 @@ async function getResponse(){
     console.log(content);
 }
 getResponse();
+
+let tests = document.querySelector('.table-base');
+tests.setAttribute('border', '1');
+
