@@ -31,91 +31,94 @@ async function getResponse(){
     `
 
     subcategory.innerHTML += `
-            <p>
-                <a href="#">${content[0].items[0].products[0].name}</a>
-            </p>
-            <p>
-                <a href="#">${content[0].items[0].products[1].name}</a>
-            </p>
-            <p>
-                <a href="#">${content[0].items[0].products[2].name}</a>
-            </p>
-            <p>
-                <a href="#">${content[0].items[0].products[3].name}</a>
-            </p>
-            <p>
-                <a href="#">${content[0].items[0].products[4].name}</a>
-            </p>
-            <p>
-                <a href="#">${content[0].items[0].products[5].name}</a>
-            </p>
-            <p>
-                <a href="#">${content[0].items[0].products[6].name}</a>
-            </p>
-            <p>
-                <a href="#">${content[0].items[0].products[7].name}</a>
-            </p>
-            <p>
-                <a href="#">${content[0].items[0].products[8].name}</a>
-            </p>
-            <p>
-                <a href="#">${content[0].items[0].products[9].name}</a>
-            </p>
-            <p>
-                <a href="#">${content[0].items[0].products[10].name}</a>
-            </p>
-            <p>
-                <a href="#">${content[0].items[0].products[12].name}</a>
-            </p>
-            <p>
-                <a href="#">${content[0].items[0].products[13].name}</a>
-            </p>
-            <p>
-                <a href="#">${content[0].items[0].products[14].name}</a>
-            </p>
-            <p>
-                <a href="#">${content[0].items[0].products[15].name}</a>
-            </p>
-            <p>
-                <a href="#">${content[0].items[0].products[16].name}</a>
-            </p>
-            <p>
-                <a href="#">${content[0].items[0].products[17].name}</a>
-            </p>
-            <p>
-                <a href="#">${content[0].items[0].products[18].name}</a>
-            </p>
-            <p>
-                <a href="#">${content[0].items[0].products[19].name}</a>
-            </p>
-            <p>
-                <a href="#">${content[0].items[0].products[20].name}</a>
-            </p>
-            <p>
-                <a href="#">${content[0].items[0].products[21].name}</a>
-            </p>
-            <p>
-                <a href="#">${content[0].items[0].products[22].name}</a>
-            </p>
-            <p>
-                <a href="#">${content[0].items[0].products[23].name}</a>
-            </p>
-            <p>
-                <a href="#">${content[0].items[0].products[24].name}</a>
-            </p>
-            <p>
-                <a href="#">${content[0].items[0].products[25].name}</a>
-            </p>
-            <p>
-                <a href="#">${content[0].items[0].products[26].name}</a>
-            </p>
-            <p>
-                <a href="#">${content[0].items[0].products[27].name}</a>
-            </p>
-            <p>
-                <a href="#">${content[0].items[0].products[28].name}</a>
-            </p>
-        `
+        <p>
+            <a href="https://test.kipaso.ru/katalog-tovarov-oven(api)/kontrolno-izmeritelnyie-priboryi/izmeriteli-regulyatoryi/2trm0-obnovlennyij-dvuxkanalnyij-izmeritel-s-interfejsom-rs-485.html">${content[0].items[0].products[0].name}</a>
+        </p>
+        <p>
+            <a href="https://test.kipaso.ru/katalog-tovarov-oven(api)/kontrolno-izmeritelnyie-priboryi/izmeriteli-regulyatoryi/2trm0-dvuxkanalnyij-izmeritel-s-universalnyim-vxodom.html">${content[0].items[0].products[1].name}</a>
+        </p>
+        <p>
+            <a href="https://test.kipaso.ru/katalog-tovarov-oven(api)/kontrolno-izmeritelnyie-priboryi/izmeriteli-regulyatoryi/itp-kompaktnyij-izmeritel.html">${content[0].items[0].products[2].name}</a>
+        </p>
+        <p>
+            <a href="https://test.kipaso.ru/katalog-tovarov-oven(api)/kontrolno-izmeritelnyie-priboryi/izmeriteli-regulyatoryi/idcz1-izmeritel-s-krupnyim-czifrovyim-indikatorom.html">${content[0].items[0].products[3].name}</a>
+        </p>
+        <p>
+            <a href="https://test.kipaso.ru/katalog-tovarov-oven(api)/kontrolno-izmeritelnyie-priboryi/izmeriteli-regulyatoryi/trm200-dvuxkanalnyij-izmeritel-s-universalnyim-vxodom-i-rs-485.html">${content[0].items[0].products[4].name}</a>
+        </p>
+        <p>
+            <a href="https://test.kipaso.ru/katalog-tovarov-oven(api)/kontrolno-izmeritelnyie-priboryi/izmeriteli-regulyatoryi/trm501-regulyator-s-czifrovyim-tajmerom.html">${content[0].items[0].products[5].name}</a>
+        </p>
+        <p>
+            <a href="https://test.kipaso.ru/katalog-tovarov-oven(api)/kontrolno-izmeritelnyie-priboryi/izmeriteli-regulyatoryi/trm502-termoregulyator-s-ruchnyim-zadaniem-ustavki.html">${content[0].items[0].products[6].name}</a>
+        </p>
+        <p>
+            <a href="https://test.kipaso.ru/katalog-tovarov-oven(api)/kontrolno-izmeritelnyie-priboryi/izmeriteli-regulyatoryi/regulator-zifrovoy.html">${content[0].items[0].products[7].name}</a>
+        </p>
+        <p>
+            <a href="https://test.kipaso.ru/katalog-tovarov-oven(api)/kontrolno-izmeritelnyie-priboryi/izmeriteli-regulyatoryi/trm500-termoregulyator-s-moshhnyim-rele,-krupnyim-indikatorom-i-pryamyim-dostupom-k-owencloud.html">${content[0].items[0].products[8].name}</a>
+        </p>
+        <p>
+            <a href="https://test.kipaso.ru/katalog-tovarov-oven(api)/kontrolno-izmeritelnyie-priboryi/izmeriteli-regulyatoryi/trm1-obnovlennyij-odnokanalnyij-izmeritel-regulyator-s-rs-485.html">${content[0].items[0].products[9].name}</a>
+        </p>
+        <p>
+            <a href="https://test.kipaso.ru/katalog-tovarov-oven(api)/kontrolno-izmeritelnyie-priboryi/izmeriteli-regulyatoryi/trm1-regulyator-s-universalnyim-vxodom.html">${content[0].items[0].products[10].name}</a>
+        </p>
+        <p>
+            <a href="https://test.kipaso.ru/katalog-tovarov-oven(api)/kontrolno-izmeritelnyie-priboryi/izmeriteli-regulyatoryi/trm201-regulyator-s-universalnyim-vxodom-i-rs-485.html">${content[0].items[0].products[11].name}</a>
+        </p>
+        <p>
+            <a href="https://test.kipaso.ru/katalog-tovarov-oven(api)/kontrolno-izmeritelnyie-priboryi/izmeriteli-regulyatoryi/2trm1-obnovlennyij-pogodozavisimyij-dvuxkanalnyij-regulyator-s-rs-485.html">${content[0].items[0].products[12].name}</a>
+        </p>
+        <p>
+            <a href="https://test.kipaso.ru/katalog-tovarov-oven(api)/kontrolno-izmeritelnyie-priboryi/izmeriteli-regulyatoryi/2trm1-dvuxkanalnyij-regulyator-s-universalnyim-vxodom.html">${content[0].items[0].products[13].name}</a>
+        </p>
+        <p>
+            <a href="https://test.kipaso.ru/katalog-tovarov-oven(api)/kontrolno-izmeritelnyie-priboryi/izmeriteli-regulyatoryi/trm202-dvuxkanalnyij-regulyator-s-universalnyim-vxodom-i-rs-485.html">${content[0].items[0].products[14].name}</a>
+        </p>
+        <p>
+            <a href="https://test.kipaso.ru/katalog-tovarov-oven(api)/kontrolno-izmeritelnyie-priboryi/izmeriteli-regulyatoryi/trm10-obnovlennyij-pid-regulyator-s-rs-485.html">${content[0].items[0].products[15].name}</a>
+        </p>
+        <p>
+            <a href="https://test.kipaso.ru/katalog-tovarov-oven(api)/kontrolno-izmeritelnyie-priboryi/izmeriteli-regulyatoryi/trm10-pid-regulyator-s-universalnyim-vxodom.html">${content[0].items[0].products[16].name}</a>
+        </p>
+        <p>
+            <a href="https://test.kipaso.ru/katalog-tovarov-oven(api)/kontrolno-izmeritelnyie-priboryi/izmeriteli-regulyatoryi/trm101-pid-regulyator-s-universalnyim-vxodom-v-korpuse-48×48-mm.html">${content[0].items[0].products[17].name}</a>
+        </p>
+        <p>
+            <a href="https://test.kipaso.ru/katalog-tovarov-oven(api)/kontrolno-izmeritelnyie-priboryi/izmeriteli-regulyatoryi/trm210-pid-regulyator-s-universalnyim-vxodom-i-rs-485.html">${content[0].items[0].products[18].name}</a>
+        </p>
+        <p>
+            <a href="https://test.kipaso.ru/katalog-tovarov-oven(api)/kontrolno-izmeritelnyie-priboryi/izmeriteli-regulyatoryi/trm12-obnovlennyij-pid-regulyator-dlya-zadvizhek-s-rs-485.html">${content[0].items[0].products[19].name}</a>
+        </p>
+        <p>
+            <a href="https://test.kipaso.ru/katalog-tovarov-oven(api)/kontrolno-izmeritelnyie-priboryi/izmeriteli-regulyatoryi/trm12-pid-regulyator-s-universalnyim-vxodom-dlya-zadvizhek.html">${content[0].items[0].products[20].name}</a>
+        </p>
+        <p>
+            <a href="https://test.kipaso.ru/katalog-tovarov-oven(api)/kontrolno-izmeritelnyie-priboryi/izmeriteli-regulyatoryi/trm212-pid-regulyator-s-universalnyim-vxodom-dlya-zadvizhek-s-rs-485.html">${content[0].items[0].products[21].name}</a>
+        </p>
+        <p>
+            <a href="https://test.kipaso.ru/katalog-tovarov-oven(api)/kontrolno-izmeritelnyie-priboryi/izmeriteli-regulyatoryi/trm136-shestikanalnyij-regulyator-s-rs-485.html">${content[0].items[0].products[22].name}</a>
+        </p>
+        <p>
+            <a href="https://test.kipaso.ru/katalog-tovarov-oven(api)/kontrolno-izmeritelnyie-priboryi/izmeriteli-regulyatoryi/trm138-vosmikanalnyij-regulyator-s-rs-485.html">${content[0].items[0].products[23].name}</a>
+        </p>
+        <p>
+            <a href="https://test.kipaso.ru/katalog-tovarov-oven(api)/kontrolno-izmeritelnyie-priboryi/izmeriteli-regulyatoryi/trm138v-vosmikanalnyij-regulyator-dlya-vzryivoopasnyix-zon-s-rs-485.html">${content[0].items[0].products[24].name}</a>
+        </p>
+        <p>
+            <a href="https://test.kipaso.ru/katalog-tovarov-oven(api)/kontrolno-izmeritelnyie-priboryi/izmeriteli-regulyatoryi/trm148-vosmikanalnyij-pid-regulyator-s-rs-485.html">${content[0].items[0].products[25].name}</a>
+        </p>
+        <p>
+            <a href="https://test.kipaso.ru/katalog-tovarov-oven(api)/kontrolno-izmeritelnyie-priboryi/izmeriteli-regulyatoryi/trm251-pid-regulyator-s-poshagovyimi-programmami-i-rs-485.html">${content[0].items[0].products[26].name}</a>
+        </p>
+        <p>
+            <a href="https://test.kipaso.ru/katalog-tovarov-oven(api)/kontrolno-izmeritelnyie-priboryi/izmeriteli-regulyatoryi/trm151-dvuxkanalnyij-pid-regulyator-s-poshagovyimi-programmami-i-rs-485.html">${content[0].items[0].products[27].name}</a>
+        </p>
+        <p>
+            <a href="https://test.kipaso.ru/katalog-tovarov-oven(api)/kontrolno-izmeritelnyie-priboryi/izmeriteli-regulyatoryi/mpr51-regulyator-temperaturyi-i-vlazhnosti,-programmiruemyij-po-vremeni.html">${content[0].items[0].products[28].name}</a>
+        </p>
+    `
     //Для ГВС, отопления, вентиляции и котельных
 
     subcategory.innerHTML += `
@@ -282,11 +285,11 @@ async function getResponse(){
     //Для электрических сетей
 
     subcategory.innerHTML += `
-                <span class="style-subcategory">${content[0].items[5].name}</span><br>
-            <div>
-                <span>Приборы:</span>
-            </div>
-        `
+        <span class="style-subcategory">${content[0].items[5].name}</span><br>
+        <div>
+            <span>Приборы:</span>
+        </div>
+    `
 
 
     subcategory.innerHTML += `

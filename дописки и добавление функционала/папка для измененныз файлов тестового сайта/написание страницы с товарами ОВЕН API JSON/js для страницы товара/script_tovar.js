@@ -20,23 +20,23 @@ async function getResponse(){
     //название товара
     title.innerHTML += `
 
-        ${content[0].items[0].products[3].name} 
+        ${content[0].items[0].products[28].name} 
 
     `
     //вывод главного,большого,фото товара
     product.innerHTML += `
-        <a class="link-photo" href="${content[0].items[0].products[3].image}">
-            <img class="hero-photo" src="${content[0].items[0].products[3].image}" alt="2ТРМ0">
+        <a class="link-photo" href="${content[0].items[0].products[28].image}">
+            <img class="hero-photo" src="${content[0].items[0].products[28].image}" alt="">
         </a>
     `
 
     //вывод маленьких фото
-    let keys = Object.keys(content[0].items[0].products[3].images);
+    let keys = Object.keys(content[0].items[0].products[28].images);
     for(let key in keys) {
         secondary.innerHTML += `
         <div class="wrapper-link-photo">
-            <a class="link-photo" href="${content[0].items[0].products[3].images[key].src}">
-                <img class="secondary-photo" src="${content[0].items[0].products[3].images[key].src}" alt="${content[0].items[0].products[3].images[key].alt}">
+            <a class="link-photo" href="${content[0].items[0].products[28].images[key].src}">
+                <img class="secondary-photo" src="${content[0].items[0].products[28].images[key].src}" alt="${content[0].items[0].products[28].images[key].alt}">
             </a>
         </div>
     `
@@ -44,30 +44,30 @@ async function getResponse(){
 
     //вывод цены
     price.innerHTML += `
-        ${content[0].items[0].products[3].prices[0].price}
+        ${content[0].items[0].products[28].prices[0].price}
     `
 
     //блок с инфой из desc(json)
     desc.innerHTML += `
-        ${content[0].items[0].products[3].desc}
+        ${content[0].items[0].products[28].desc}
     `
     //блок с инфой из specs(json)
     specs.innerHTML += `
-        ${content[0].items[0].products[3].specs}
+        ${content[0].items[0].products[28].specs}
     `
     //блок с инфой из docs-заголовок документация
     headerDocumentation.innerHTML += `
-        ${content[0].items[0].products[3].docs[0].name}
+        ${content[0].items[0].products[28].docs[0].name}
     `
 
     //содержание блока документация
-    let doc = Object.keys(content[0].items[0].products[3].docs[0].items);
+    let doc = Object.keys(content[0].items[0].products[28].docs[0].items);
     for(let key in doc) {
 
         contentDocumentation.innerHTML += `
         <div class="block-name-doc">
-            <a class="link-documentation" href="${content[0].items[0].products[3].docs[0].items[key].link}">
-                <span class="name-documentation">${content[0].items[0].products[3].docs[0].items[key].name}</span>
+            <a class="link-documentation" href="${content[0].items[0].products[28].docs[0].items[key].link}">
+                <span class="name-documentation">${content[0].items[0].products[28].docs[0].items[key].name}</span>
             </a><br>
         <div>
     `
@@ -75,17 +75,17 @@ async function getResponse(){
 
     //блок с инфой из docs-заголовок сертификаты
     headerCertificates.innerHTML += `
-        ${content[0].items[0].products[3].docs[1].name}
+        ${content[0].items[0].products[28].docs[1].name}
     `
 
     //содержание блока сертификаты
-    let certificates = Object.keys(content[0].items[0].products[3].docs[1].items);
+    let certificates = Object.keys(content[0].items[0].products[28].docs[1].items);
     for(let key in certificates) {
 
         contentCertificates.innerHTML += `
         <div class="block-name-certificates">
-            <a class="link-certificates" href="${content[0].items[0].products[3].docs[1].items[key].link}">
-                <span class="name-certificates">${content[0].items[0].products[3].docs[1].items[key].name}</span>
+            <a class="link-certificates" href="${content[0].items[0].products[28].docs[1].items[key].link}">
+                <span class="name-certificates">${content[0].items[0].products[28].docs[1].items[key].name}</span>
             </a><br>
         </div>
     `
@@ -117,19 +117,19 @@ async function getResponse(){
     };*/
 
     //содержание блока prices 
-    let keysPrice = Object.keys(content[0].items[0].products[3].prices);
+    let keysPrice = Object.keys(content[0].items[0].products[28].prices);
     for(let key in keysPrice) {
 
         wrapperPrice.innerHTML += `
         <div class="wrapper-price_block">
-            <div class="name-prodict">${content[0].items[0].products[3].prices[key].name}</div>
-            <div class="price-prodict">${content[0].items[0].products[3].prices[key].price}</div>
+            <div class="name-prodict">${content[0].items[0].products[28].prices[key].name}</div>
+            <div class="price-prodict">${content[0].items[0].products[28].prices[key].price}</div>
         </div>
     `
     }
 
     //добавил класс блоку,для того чтобы его скрыть из верстки
-    document.querySelector('.table-base').classList.add('block-none');
+    //document.querySelector('.table-base').classList.add('block-none');
 
 
     console.log(content);
