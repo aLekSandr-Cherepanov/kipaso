@@ -3,7 +3,7 @@ async function getResponse(){
     let content = await response.json();
     content = content.categories;
     //поиск нужных элементов
-    let title = document.querySelector('.title-product');
+    let title = document.querySelector('.content__header');
     let product = document.querySelector('.block-hero-photo');
     let secondary = document.querySelector('.block-secondary-photo');
     let price = document.querySelector('.price');
