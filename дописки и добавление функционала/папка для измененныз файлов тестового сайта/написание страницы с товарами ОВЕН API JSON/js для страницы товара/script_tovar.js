@@ -35,8 +35,8 @@ async function getResponse(){
     for(let key in keys) {
         secondary.innerHTML += `
         <div class="wrapper-link-photo">
-            <a class="link-photo" href="${content[0].items[0].products[28].images[key].src}">
-                <img class="secondary-photo" src="${content[0].items[0].products[28].images[key].src}" alt="${content[0].items[0].products[28].images[key].alt}">
+            <a class="photos__item" data-lightbox="image-tovar-group" href="${content[0].items[0].products[28].images[key].src}">
+                <img class="photos__img lazy-img" src="${content[0].items[0].products[28].images[key].src}" alt="${content[0].items[0].products[28].images[key].alt}">
             </a>
         </div>
     `
