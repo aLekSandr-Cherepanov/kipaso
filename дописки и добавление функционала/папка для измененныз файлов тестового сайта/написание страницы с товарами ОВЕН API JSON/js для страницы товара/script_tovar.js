@@ -67,7 +67,7 @@ async function getResponse(){
         contentDocumentation.innerHTML += `
         <div class="block-name-doc">
             <a class="link-documentation" href="${content[0].items[0].products[28].docs[0].items[key].link}">
-                <span class="name-documentation">${content[0].items[0].products[28].docs[0].items[key].name}</span>
+                ${content[0].items[0].products[28].docs[0].items[key].name}
             </a><br>
         <div>
     `
@@ -83,9 +83,12 @@ async function getResponse(){
     for(let key in certificates) {
 
         contentCertificates.innerHTML += `
+        <div class="content-documentation">
+            <img class="doc-icon" src="https://img.icons8.com/external-others-iconmarket/452/external-doc-file-types-others-iconmarket.png" alt="">
+        </div>
         <div class="block-name-certificates">
             <a class="link-certificates" href="${content[0].items[0].products[28].docs[1].items[key].link}">
-                <span class="name-certificates">${content[0].items[0].products[28].docs[1].items[key].name}</span>
+                ${content[0].items[0].products[28].docs[1].items[key].name}
             </a><br>
         </div>
     `
