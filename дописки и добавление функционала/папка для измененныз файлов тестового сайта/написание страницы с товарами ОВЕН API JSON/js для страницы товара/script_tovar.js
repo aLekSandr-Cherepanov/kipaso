@@ -134,9 +134,9 @@ async function getResponse(){
 
     console.log(content);
 
-    var table = document.querySelectorAll(".table-base");
+    /*var table = document.querySelectorAll(".table-base");
     table[1].setAttribute("border", "1");
     table[2].setAttribute("border", "1");
-    table[3].setAttribute("border", "1");
+    table[3].setAttribute("border", "1");*/
 }
 getResponse();
