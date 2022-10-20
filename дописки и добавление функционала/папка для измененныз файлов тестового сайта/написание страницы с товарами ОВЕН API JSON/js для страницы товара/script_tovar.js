@@ -65,11 +65,16 @@ async function getResponse(){
     for(let key in doc) {
 
         contentDocumentation.innerHTML += `
-        <div class="block-name-doc">
-            <a class="link-documentation" href="${content[0].items[0].products[28].docs[0].items[key].link}">
-                ${content[0].items[0].products[28].docs[0].items[key].name}
-            </a><br>
-        <div>
+        <div class="wrapper-block-img-doc">
+            <div class="block-img-doc">
+                <img class="doc-icon" src="/assets/templates/new/img/doc-oven.png" alt="">
+            </div>
+            <div class="block-name-certificates">
+                <a class="link-doc" href="${content[0].items[0].products[28].docs[1].items[key].link}">
+                    ${content[0].items[0].products[28].docs[1].items[key].name}
+                </a><br>
+            </div>
+        </div>
     `
     }
 
@@ -83,13 +88,15 @@ async function getResponse(){
     for(let key in certificates) {
 
         contentCertificates.innerHTML += `
-        <div class="content-documentation">
-            <img class="doc-icon" src="https://img.icons8.com/external-others-iconmarket/452/external-doc-file-types-others-iconmarket.png" alt="">
-        </div>
-        <div class="block-name-certificates">
-            <a class="link-certificates" href="${content[0].items[0].products[28].docs[1].items[key].link}">
-                ${content[0].items[0].products[28].docs[1].items[key].name}
-            </a><br>
+        <div class="wrapper-block-img-doc">
+            <div class="block-img-doc">
+                <img class="doc-icon" src="https://cdn-icons-png.flaticon.com/512/7632/7632534.png" alt="">
+            </div>
+            <div class="block-name-certificates">
+                <a class="link-doc" href="${content[0].items[0].products[28].docs[1].items[key].link}">
+                    ${content[0].items[0].products[28].docs[1].items[key].name}
+                </a><br>
+            </div>
         </div>
     `
     }
@@ -105,10 +112,15 @@ async function getResponse(){
         for(let key in keysPo) {
 
             contentPo.innerHTML += `
-            <div class="block-name-po">
-                <a class="link-po" href="${content[0].items[0].products[2].docs[2].items[key].link}">
-                    <span class="name-po">${content[0].items[0].products[2].docs[2].items[key].name}</span>
-                </a><br>
+            <div class="wrapper-block-img-doc">
+                <div class="block-img-doc">
+                    <img class="doc-icon" src="https://cdn-icons-png.flaticon.com/512/7632/7632534.png" alt="">
+                </div>
+                <div class="block-name-po">
+                    <a class="link-doc" href="${content[0].items[0].products[2].docs[2].items[key].link}">
+                        ${content[0].items[0].products[2].docs[2].items[key].name}
+                    </a><br>
+                </div>
             </div>
         `
         }
