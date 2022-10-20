@@ -100,36 +100,29 @@ async function getResponse(){
         </div>
     `
     }
-    //функция нужна чтобы код шел дальше если блока не будет на других товарах
-    /*function blockPo(){
-        //блок с инфой из docs-заголовок ПО
-        headerPo.innerHTML += `
-                ${content[0].items[0].products[2].docs[2].name}
-        `
 
-        //содержание блока ПО
-        let keysPo = Object.keys(content[0].items[0].products[2].docs[2].items);
-        for(let key in keysPo) {
+    //блок с инфой из docs-заголовок ПО
+    headerPo.innerHTML += `
+            ${content[0].items[0].products[2].docs[2].name}
+    `
 
-            contentPo.innerHTML += `
-            <div class="wrapper-block-img-doc">
-                <div class="block-img-doc">
-                    <img class="doc-icon" src="https://cdn-icons-png.flaticon.com/512/7632/7632534.png" alt="">
-                </div>
-                <div class="block-name-po">
-                    <a class="link-doc" href="${content[0].items[0].products[2].docs[2].items[key].link}">
-                        ${content[0].items[0].products[2].docs[2].items[key].name}
-                    </a><br>
-                </div>
+    //содержание блока ПО
+    let keysPo = Object.keys(content[0].items[0].products[2].docs[2].items);
+    for(let key in keysPo) {
+
+        contentPo.innerHTML += `
+        <div class="wrapper-block-img-doc">
+            <div class="block-img-doc">
+                <img class="doc-icon" src="https://cdn-icons-png.flaticon.com/512/7632/7632534.png" alt="">
             </div>
-        `
-        }
-    };
-    blockPo();
-
-    if (blockPo===false){
-        return true;
-    };*/
+            <div class="block-name-po">
+                <a class="link-doc" href="${content[0].items[0].products[2].docs[2].items[key].link}">
+                    ${content[0].items[0].products[2].docs[2].items[key].name}
+                </a><br>
+            </div>
+        </div>
+    `
+    }
 
     //содержание блока prices 
     let keysPrice = Object.keys(content[0].items[0].products[28].prices);
@@ -138,7 +131,7 @@ async function getResponse(){
         wrapperPrice.innerHTML += `
         <div class="wrapper-price_block">
             <div class="name-prodict">${content[0].items[0].products[28].prices[key].name}</div>
-            <div class="price-prodict">${content[0].items[0].products[28].prices[key].price}</div>
+            <div class="price-prodict">${content[0].items[0].products[28].prices[key].price} ₽</div>
         </div>
     `
     }
