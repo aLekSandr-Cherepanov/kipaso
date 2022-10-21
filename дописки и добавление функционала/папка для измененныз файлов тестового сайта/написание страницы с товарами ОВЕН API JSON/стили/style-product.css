@@ -3,6 +3,8 @@
 }
 
 .container-content {
+    max-width: 1350px;
+    margin: 0 auto;
     font: 15px/24px"Open Sans",Arial,sans-serif;
     padding: 35px;
 }
@@ -14,7 +16,6 @@
 .header-content {
     display: flex;
     margin-bottom: 30px;
-    justify-content: space-around;
 }
 
 .price-left {
@@ -36,6 +37,9 @@
 .wrapper-price_block {
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid #ccc9c9;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
 }
 
 .hero-photo {
@@ -54,10 +58,6 @@
     display: flex;
 }
 
-p {
-    margin: 0px 0px 20px;
-}
-
 .table-base {
     width: 100%;
 }
@@ -69,6 +69,17 @@ h3 {
     font-size: 1.6em;
     line-height: 24px;
     margin: 40px 0 26px;
+}
+
+.style-header {
+    padding-top: 20px; 
+    padding-left: 15px;
+}
+
+.wrapper-block-header {
+    height: 60px;
+    background: #ededed;
+    margin-bottom: 35px;
 }
 
 .table-base td {
@@ -89,4 +100,50 @@ h3 {
 
 .panel-heading {
     padding: 10px 0px;
+}
+
+.doc-icon {
+    width: 40px;
+}
+
+.wrapper-block-img-doc {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc9c9;
+    padding-bottom: 15px;
+}
+
+.link-doc {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+}
+
+.block-img-doc {
+    margin-right: 15px;
+}
+
+.title-price {
+    margin-bottom: 40px;
+}
+
+.block-price {
+    width: 50%;
+}
+
+.documentation {
+    margin-bottom: 70px;
+}
+
+.certificates {
+    margin-bottom: 70px;
+}
+
+.po {
+    margin-bottom: 70px;
+}
+
+.wrapper-block-img-doc:last-child  {
+    margin-bottom: 0px;
 }
