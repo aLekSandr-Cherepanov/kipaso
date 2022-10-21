@@ -11,10 +11,11 @@
 
 .block-secondary-photo {
     display: flex;
+    margin-bottom: 50px;
 }
 
 .header-content {
-    display: flex;
+    /*display: flex;*/
     margin-bottom: 30px;
 }
 
@@ -43,7 +44,15 @@
 }
 
 .hero-photo {
-    width: 400px;
+    width: 500px;
+}
+
+.wrapper-link-photo {
+    margin-right: 30px;
+}
+
+.photos__img {
+    width: 100px;
 }
 
 .secondary-photo {
@@ -146,4 +155,38 @@ h3 {
 
 .wrapper-block-img-doc:last-child  {
     margin-bottom: 0px;
+}
+
+.wrapper-price_block:last-child  {
+    margin-bottom: 0px;
+}
+
+.cta-product {
+    width: 80%;
+    background: #ededed;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.artboard_30 {
+    width: 80px;
+    height: 60px;
+    fill: #54686f;
+}
+
+.cta-product-btn {
+    border: 0;
+    border-radius: 4px;
+    background-color: #018e86;
+    color: #fff;
+    padding: 5px 30px;
+    transition: 0.3s all;
+    margin-top: 20px;
+}
+
+.block-hero-photo {
+    margin-right: 40px;
 }
