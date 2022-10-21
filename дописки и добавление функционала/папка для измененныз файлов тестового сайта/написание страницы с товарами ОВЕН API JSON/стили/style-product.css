@@ -162,7 +162,7 @@ h3 {
 }
 
 .cta-product {
-    width: 80%;
+    width: 60%;
     background: #ededed;
     display: flex;
     align-items: center;
@@ -171,10 +171,16 @@ h3 {
     border-radius: 4px;
 }
 
+.cta-product-left {
+    display: flex;
+    align-items: center;
+}
+
 .artboard_30 {
-    width: 80px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
     fill: #54686f;
+    margin-right: 25px;
 }
 
 .cta-product-btn {
@@ -184,7 +190,7 @@ h3 {
     color: #fff;
     padding: 5px 30px;
     transition: 0.3s all;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .block-hero-photo {
