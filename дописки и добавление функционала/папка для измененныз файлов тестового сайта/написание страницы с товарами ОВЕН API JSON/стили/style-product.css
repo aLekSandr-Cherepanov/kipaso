@@ -64,6 +64,10 @@
     justify-content: space-between;
 }
 
+.photo-oven {
+    margin-right: 30%;
+}
+
 .base-info__sidebar {
     display: none;
 }
