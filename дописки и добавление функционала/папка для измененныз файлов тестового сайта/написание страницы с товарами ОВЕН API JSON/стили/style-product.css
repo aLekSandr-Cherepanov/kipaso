@@ -59,6 +59,11 @@
     width: 7vw;
 }
 
+.block-photo {
+    display: flex;
+    justify-content: space-between;
+}
+
 .base-info__sidebar {
     display: none;
 }
