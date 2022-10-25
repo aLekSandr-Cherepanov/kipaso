@@ -139,7 +139,8 @@ async function getResponse(){
     //document.querySelector('.table-base').classList.add('block-none');
 
     // добавляет класс к блоку ПО чтобы его скрыть
-    //document.querySelector(".po").style.display = "none";   
+    //document.querySelector(".po").style.display = "none";  
+    тестовое написание кода для проверки работы гита 
 
 
     console.log(content);
