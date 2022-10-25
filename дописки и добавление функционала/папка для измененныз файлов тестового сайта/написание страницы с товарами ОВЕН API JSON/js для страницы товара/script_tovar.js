@@ -140,7 +140,6 @@ async function getResponse(){
 
     // добавляет класс к блоку ПО чтобы его скрыть
     //document.querySelector(".po").style.display = "none";  
-    еще один тестовый коммит
 
 
     console.log(content);
