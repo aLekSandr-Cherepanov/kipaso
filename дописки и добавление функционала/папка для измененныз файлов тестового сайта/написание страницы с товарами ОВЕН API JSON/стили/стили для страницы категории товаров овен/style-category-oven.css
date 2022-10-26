@@ -1,0 +1,27 @@
+.block_category {
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero-header {
+    color: #54686f;
+}
+
+.hero-subcategory {
+    font-size: 1.6em;
+    line-height: 24px;
+    margin: 40px 0 26px;
+    color: #54686f;
+}
+
+.list-category {
+    margin-bottom: 14px;
+    font-size: 16px;
+    line-height: 18px;
+    margin-left: 18px;
+    color: #54686f;
+}
+
+.link-category {
+    color: #54686f;
+    text-decoration: none;
+}
