@@ -3,7 +3,7 @@ async function getResponse(){
     let content = await response.json();
     content = content.categories;
     
-    let data = document.querySelector('.wrapper-container');
+    let data = document.querySelector('.block-header-category');
     let subcategory = document.querySelector('.subcategory');
     let data2 = document.querySelector('.wrapper-container2');
     let subcategory2 = document.querySelector('.subcategory2');
