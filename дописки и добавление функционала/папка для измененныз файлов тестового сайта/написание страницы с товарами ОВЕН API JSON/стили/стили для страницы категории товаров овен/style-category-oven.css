@@ -1,5 +1,7 @@
 .block_category {
     font-family: 'Roboto', sans-serif;
+    max-width: 1350px;
+    margin: 0 auto;
 }
 
 .hero-header {
@@ -24,4 +26,17 @@
 .link-category {
     color: #54686f;
     text-decoration: none;
+}
+
+.link-category:hover {
+    text-decoration: underline;
+}
+
+.wrapper-list-img {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-category {
+    width: 180px;
 }
