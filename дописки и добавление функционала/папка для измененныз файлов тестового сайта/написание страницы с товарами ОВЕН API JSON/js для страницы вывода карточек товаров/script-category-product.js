@@ -4,6 +4,7 @@ async function getResponse(){
     content = content.categories;
     
     let data = document.getElementById('2ТРМ0');
+    let test = document.getElementById('testId').src="${content[0].items[0].products[0].name}";
     let data1 = document.getElementById('2ТРМ01');
     let data2 = document.getElementById('ИТП');
     let data3 = document.getElementById('ИДЦ1');
