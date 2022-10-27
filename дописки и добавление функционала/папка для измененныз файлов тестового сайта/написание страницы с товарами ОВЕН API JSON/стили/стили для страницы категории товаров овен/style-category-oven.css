@@ -43,6 +43,14 @@
 
 /* Начало стилизации страницы вывода товаров подкатегории */
 
+.block-hero-category {
+    margin-bottom: 40px;
+}
+
+.hero-category {
+    color: #54686f;
+}
+
 .block_product {
     box-shadow: 0 0 0 1px #f2f2f2 inset;
     padding: 24px 0;
@@ -55,7 +63,7 @@
 .block-list-product {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    /*justify-content: center;*/
 }
 
 .product-block_image{
