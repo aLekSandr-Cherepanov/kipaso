@@ -51,19 +51,20 @@
     color: #54686f;
 }
 
-.block_product {
+.wrapper-block_product {
+    width: 340px;
     box-shadow: 0 0 0 1px #f2f2f2 inset;
+}
+
+.block_product {
     padding: 24px 0;
 }
 
-.wrapper-block_product {
-    width: 340px;
-}
 
 .block-list-product {
     display: flex;
     flex-wrap: wrap;
-    /*justify-content: center;*/
+    justify-content: center;
 }
 
 .product-block_image{
@@ -80,4 +81,17 @@
 .wrapper-link {
     width: 60%;
     margin: 0 auto;
+}
+
+.block-photo-link {
+    margin-bottom: 25px;
+}
+
+.link-name-product{
+    text-decoration: none;
+    color: black;
+}
+
+.link-name-product:hover{
+    text-decoration: underline;
 }
