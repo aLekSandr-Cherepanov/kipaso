@@ -63,6 +63,15 @@ async function getResponse(){
     let photo19 = document.getElementById('ТРМ12_photo');
     let product19 = document.getElementById('ТРМ12');
 
+    let photo20 = document.getElementById('ТРМ12-1_photo');
+    let product20 = document.getElementById('ТРМ12-1');
+
+    let photo21 = document.getElementById('ТРМ212_photo');
+    let product21 = document.getElementById('ТРМ212');
+
+    let photo22 = document.getElementById('ТРМ136_photo');
+    let product22 = document.getElementById('ТРМ136');
+
 
     photo.innerHTML += `
         <img class="product-block_image" src="${content[0].items[0].products[0].image}" alt="">
@@ -209,6 +218,27 @@ async function getResponse(){
     `
     product19.innerHTML += `
         ${content[0].items[0].products[19].name}
+    `
+
+    photo20.innerHTML += `
+        <img class="product-block_image" src="${content[0].items[0].products[20].image}" alt="">
+    `
+    product20.innerHTML += `
+        ${content[0].items[0].products[20].name}
+    `
+
+    photo21.innerHTML += `
+        <img class="product-block_image" src="${content[0].items[0].products[21].image}" alt="">
+    `
+    product21.innerHTML += `
+        ${content[0].items[0].products[21].name}
+    `
+
+    photo22.innerHTML += `
+        <img class="product-block_image" src="${content[0].items[0].products[22].image}" alt="">
+    `
+    product22.innerHTML += `
+        ${content[0].items[0].products[22].name}
     `
 
 
