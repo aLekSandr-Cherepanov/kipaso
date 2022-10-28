@@ -59,13 +59,9 @@
 }
 
 .wrapper-block_product:hover  {
-    box-shadow: -10px -10px 15px rgba(255,255,255,0.5),
-            10px 10px 15px rgba(70,70,70,0.12),
-            10px -10px 15px rgba(255,255,255,0.5),
-            -10px 10px 15px rgba(70,70,70,0.12),
-            -10px 10px 15px rgba(70,70,70,0.12),
-            10px -10px 15px rgba(255,255,255,0.5),
-            -10px 10px 15px rgba(70,70,70,0.12);
+    -webkit-box-shadow: -2px 3px 9px 9px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: -2px 3px 9px 9px rgba(34, 60, 80, 0.2);
+    box-shadow: -2px 3px 9px 9px rgba(34, 60, 80, 0.2);
             
 }
 
