@@ -1224,6 +1224,11 @@ async function getResponse(){
             <a href="#">${content[3].items[0].products[38].name}</a>
         </p>
     `
+    subcategory4.innerHTML += `
+        <p>
+            <a href="#">${content[3].items[0].products[39].name}</a>
+        </p>
+    `
 
     //Датчики влажности и температуры воздуха
 

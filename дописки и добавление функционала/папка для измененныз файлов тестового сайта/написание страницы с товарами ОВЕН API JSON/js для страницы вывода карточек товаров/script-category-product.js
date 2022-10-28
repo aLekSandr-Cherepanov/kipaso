@@ -72,6 +72,24 @@ async function getResponse(){
     let photo22 = document.getElementById('ТРМ136_photo');
     let product22 = document.getElementById('ТРМ136');
 
+    let photo23 = document.getElementById('ТРМ138_photo');
+    let product23 = document.getElementById('ТРМ138');
+
+    let photo24 = document.getElementById('ТРМ138В_photo');
+    let product24 = document.getElementById('ТРМ138В');
+
+    let photo25 = document.getElementById('ТРМ148_photo');
+    let product25 = document.getElementById('ТРМ148');
+
+    let photo26 = document.getElementById('ТРМ251_photo');
+    let product26 = document.getElementById('ТРМ251');
+
+    let photo27 = document.getElementById('ТРМ151_photo');
+    let product27 = document.getElementById('ТРМ151');
+
+    let photo28 = document.getElementById('МПР51_photo');
+    let product28 = document.getElementById('МПР51');
+
 
     photo.innerHTML += `
         <img class="product-block_image" src="${content[0].items[0].products[0].image}" alt="">
@@ -239,6 +257,48 @@ async function getResponse(){
     `
     product22.innerHTML += `
         ${content[0].items[0].products[22].name}
+    `
+
+    photo23.innerHTML += `
+        <img class="product-block_image" src="${content[0].items[0].products[23].image}" alt="">
+    `
+    product23.innerHTML += `
+        ${content[0].items[0].products[23].name}
+    `
+
+    photo24.innerHTML += `
+        <img class="product-block_image" src="${content[0].items[0].products[24].image}" alt="">
+    `
+    product24.innerHTML += `
+        ${content[0].items[0].products[24].name}
+    `
+
+    photo25.innerHTML += `
+        <img class="product-block_image" src="${content[0].items[0].products[25].image}" alt="">
+    `
+    product25.innerHTML += `
+        ${content[0].items[0].products[25].name}
+    `
+
+    photo26.innerHTML += `
+        <img class="product-block_image" src="${content[0].items[0].products[26].image}" alt="">
+    `
+    product26.innerHTML += `
+        ${content[0].items[0].products[26].name}
+    `
+
+    photo27.innerHTML += `
+        <img class="product-block_image" src="${content[0].items[0].products[27].image}" alt="">
+    `
+    product27.innerHTML += `
+        ${content[0].items[0].products[27].name}
+    `
+
+    photo28.innerHTML += `
+        <img class="product-block_image" src="${content[0].items[0].products[28].image}" alt="">
+    `
+    product28.innerHTML += `
+        ${content[0].items[0].products[28].name}
     `
 
 
