@@ -13,9 +13,7 @@ async function getResponse(){
     let subcategory4 = document.querySelector('.subcategory4');
     let data5 = document.querySelector('.wrapper-container5');
     let subcategory5 = document.querySelector('.subcategory5');
-
-    //тестовый коментарий
-    
+  
 
     //КОНТРОЛЬНО-ИЗМЕРИТЕЛЬНЫЕ ПРИБОРЫ
     //Измерители-регуляторы
