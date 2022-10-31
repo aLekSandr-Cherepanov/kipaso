@@ -65,7 +65,7 @@
 }
 
 .photo-oven {
-    margin-right: 30%;
+    margin-right: 20%;
 }
 
 .base-info__sidebar {
@@ -204,4 +204,8 @@ h3 {
 
 .block-hero-photo {
     margin-right: 40px;
+}
+
+.para-comment {
+    display: none;
 }
