@@ -23,9 +23,11 @@ async function getResponse(){
         ${content[0].items[0].products[28].name} 
 
     `
+
+    let test = document.getElementById(testClass);
     //вывод главного,большого,фото товара
     product.innerHTML += `
-        <a class="link-photo" href="${content[0].items[0].products[28].image}">
+        <a class="link-photo" href="${test}">
             <img class="hero-photo" src="${content[0].items[0].products[28].image}" alt="2ТРМ0">
         </a>
     `
