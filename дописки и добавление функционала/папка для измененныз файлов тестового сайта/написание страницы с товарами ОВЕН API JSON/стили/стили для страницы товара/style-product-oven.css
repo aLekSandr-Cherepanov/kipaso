@@ -19,8 +19,15 @@
     margin-bottom: 30px;
 }
 
+.block-photo-info {
+    display: flex;
+}
+
+.logo-oven {
+    width: 100px;
+}
+
 .price-left {
-    display: none;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -44,7 +51,7 @@
 }
 
 .hero-photo {
-    width: 500px;
+    width: 470px;
 }
 
 .wrapper-link-photo {
@@ -71,6 +78,7 @@
 
 .product_photo {
     display: flex;
+    flex-direction: column;
 }
 
 .table-base {

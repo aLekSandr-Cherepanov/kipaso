@@ -6,68 +6,47 @@
     </div>
     <!--блок с фото ценой и прайс-листом-->
     <div class="header-content">
-        <!--блок с изображениями-->
-        <div class="product_photo">
-            <!--Главное фото-->
-            <div class="block-hero-photo">
-                  <!--тут главное фото-->  
-            </div>
-            <div>
+        <div class="block-photo-info">
+            <div class="product_photo">
+                <!--блок с изображениями-->
+                <div class="photo-oven">
+                    <img class="logo-oven" src="/assets/templates/new/img/photo-oven-big.png" alt="логотип ОВЕН">
+                </div>
+                <div class="block-hero-photo">
+                      <!--тут главное фото-->  
+                </div>
                 <div class="block-photo">
                     <div class="block-secondary-photo">
                         <!--Второстепенные фото-->
                     </div>
-                    <div class="photo-oven">
-                        <img src="/assets/templates/new/img/logo-oven-product.jpg" alt="логотип ОВЕН">
-                    </div>
+                    
                 </div>
-                <div class="cta-product">
+                <!--<div class="cta-product">
                     <div class="cta-product-left">
                         <img class="artboard_30" src="/assets/templates/new/img/email-icon.png" alt="">
-                    <div class="cta-product-right">
-                        <p>
-                            Если у Вас, возникают вопросы в отношении оборудования ОВЕН, Вы всегда можете обратится к нашим менеджерам написав нам на почту.
-                        </p>
-                        <button class="cta-product-btn pageform">info@kipaso.ru</button>
+                        <div class="cta-product-right">
+                            <p>
+                                Если у Вас, возникают вопросы в отношении оборудования ОВЕН, Вы всегда можете обратится к нашим менеджерам написав нам на почту.
+                            </p>
+                            <button class="cta-product-btn pageform">info@kipaso.ru</button>
+                        </div>
                     </div>
+                </div>-->
+            </div>
+            <div class="price-left">
+                <!--блок слева от главного фото,с ценой-->
+                <!--///////////////////////////-->
+                <div>
+                    <h2>Заглушка Заглушка Заглушка Заглушка Заглушка Заглушка</h2>
+                </div>
+                <!--блок с ценой-->
+                <div class="container-price">
+                    <span class="wrapper-price-block">
+                        Цена:<p class="price"><!--Цена--></p>
+                    </span>
                 </div>
             </div>
         </div>
-        <div class="price-left">
-            <!--блок слева от главного фото,с ценой-->
-            <!--///////////////////////////-->
-            <div>
-                <h2>Заглушка Заглушка Заглушка Заглушка Заглушка Заглушка</h2>
-            </div>
-            <!--блок с ценой-->
-            <div class="container-price">
-                <span class="wrapper-price-block">
-                    Цена:<p class="price"><!--Цена--></p>
-                </span>
-            </div>
-        </div>
-        <div class="base-info__sidebar">
-            <div class="base-info__feedback product-feedback">
-                <form action="[[~223]]" method="get">
-                  <div class="product-feedback__title">Задать вопрос</div>
-                  <div class="product-feedback__mods">
-                    <select class="product-feedback__select" name="pribor">
-                      [[shk_include?
-                      &file=`core/components/shopkeeper/elements/snippets/param_edit_table.php`
-                      &tvValue=`[[*mods]]`
-                      &tpl=`new_properties_top`
-                      ]]
-                      <option class="product-feedback__option" value="[[*pagetitle]]">[[*pagetitle]]</option>
-                    </select>
-                  </div>
-                  <div class="product-feedback__button-wrap">
-                    <button class="button product-feedback__button" type="submit">Запрос</button>
-                  </div>
-                </form>
-            </div>
-            [[!new_price_switch]]
-        </div>
-    </div>
     <div class="wrapper-tovar">
       <!--контент из json овен-->
         <div class="wrapper-block-desc">
