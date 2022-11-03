@@ -81,6 +81,11 @@
     flex-direction: column;
 }
 
+.list-modification {
+    color: #FFF;
+    background: #fa9300;
+}
+
 .table-base {
     width: 100%;
 }

@@ -6,7 +6,6 @@ async function getResponse(){
     let title = document.querySelector('.content__header');
     let product = document.querySelector('.block-hero-photo');
     let secondary = document.querySelector('.block-secondary-photo');
-    let price = document.querySelector('.price');
     let desc = document.querySelector('.block-desc');
     let specs = document.querySelector('.block-specs');
     let headerDocumentation = document.querySelector('.header-documentation');
@@ -45,9 +44,9 @@ async function getResponse(){
     }
 
     //вывод цены
-    price.innerHTML += `
+    /*price.innerHTML += `
         ${content[0].items[0].products[28].prices[0].price}
-    `
+    `*/
 
     //блок с инфой из desc(json)
     desc.innerHTML += `
