@@ -28,8 +28,10 @@
 }
 
 .price-left {
+    width: 45%;
     flex-direction: column;
     justify-content: space-between;
+    padding-left: 40px;
 }
 
 .container-price {
@@ -81,9 +83,18 @@
     flex-direction: column;
 }
 
+.wrapper-list-modification {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .list-modification {
     color: #FFF;
     background: #fa9300;
+    margin: 6px;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px 13px;
 }
 
 .table-base {
