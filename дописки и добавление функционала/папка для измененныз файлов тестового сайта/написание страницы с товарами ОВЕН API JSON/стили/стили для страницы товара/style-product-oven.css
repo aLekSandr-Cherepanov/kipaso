@@ -83,6 +83,37 @@
     flex-direction: column;
 }
 
+.general-wrapper__price-block {
+    margin-bottom: 10px;
+}
+
+.general-wrapper__name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #777;
+}
+
+.general-wrapper__price {
+    font-weight: bold;
+    font-size: 18px;
+    color: #777;
+}
+
+.price-block {
+    margin-top: 10px;
+}
+
+.general-wrapper__name-block {
+    margin-bottom: 30px;
+}
+
+.final-price {
+    font-weight: bold;
+    font-size: 22px;
+    color: #348c34;
+}
+
 .modification-name {
     margin-bottom: 20px;
 }
