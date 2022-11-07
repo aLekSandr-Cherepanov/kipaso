@@ -83,6 +83,15 @@
     flex-direction: column;
 }
 
+.modification-name {
+    margin-bottom: 20px;
+}
+
+.wrapper-modification_block {
+    max-height: 400px;
+    overflow: auto;
+}
+
 .wrapper-list-modification {
     display: flex;
     flex-wrap: wrap;
@@ -90,7 +99,7 @@
 
 .list-modification {
     color: #FFF;
-    background: #fa9300;
+    background: #00aed9;
     margin: 6px;
     cursor: pointer;
     border-radius: 5px;

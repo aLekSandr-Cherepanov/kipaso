@@ -15,6 +15,7 @@ async function getResponse(){
     let headerPo = document.querySelector('.header-po');
     let contentPo = document.querySelector('.content-po');
     let wrapperPrice = document.querySelector('.wrapper-price');
+    let modificationBlock = document.querySelector('.wrapper-list-modification');
 
     //название товара
     title.innerHTML += `
@@ -42,10 +43,18 @@ async function getResponse(){
     `
     }
 
-    //вывод цены
-    /*price.innerHTML += `
-        ${content[0].items[0].products[28].prices[0].price}
-    `*/
+    //вывод цены 
+    let listPrice = Object.keys(content[0].items[0].products[2].prices);
+    for(let key in listPrice) {
+
+        modificationBlock.innerHTML += `
+        <li class="list-modification">
+            <span class="name-modification">${content[0].items[0].products[2].prices[key].name}</span>
+        </li>
+    `
+    }
+
+    
 
     //блок с инфой из desc(json)
     desc.innerHTML += `
