@@ -49,8 +49,8 @@ async function getResponse(){
 
         modificationBlock.innerHTML += `
         <li class="list-modification">
-            <span class="name-modification">${content[0].items[0].products[5].prices[key].name}</span>
-            <span class="string-price" style="display: none;">${content[0].items[0].products[5].prices[key].price}</span>
+            <span data-name class="name-modification">${content[0].items[0].products[5].prices[key].name}</span>
+            <span data price class="string-price" style="display: none;">${content[0].items[0].products[5].prices[key].price}</span>
         </li>
     `
     }
@@ -154,3 +154,21 @@ async function getResponse(){
     console.log(content);
 }
 getResponse();
+
+// часть кода которая отвечает за выведение нужной цены при клике
+
+window.addEventListener('click', function(event){
+
+    if (event.target.hasAttribute('data-name')) {
+
+        let button = event.target.closest('.list-modification');
+        console.log(button);
+
+
+    }
+
+    
+})
+    
+
+
