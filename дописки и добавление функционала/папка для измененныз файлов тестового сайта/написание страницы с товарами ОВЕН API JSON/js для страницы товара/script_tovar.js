@@ -171,12 +171,16 @@ window.addEventListener('click', function(event){
         
 
         //собираем данные внутри кнопки(наименование,цена)
-        let productInfo = {
-            title: button.querySelector('.name-modification').innerText,
-            price: button.querySelector('.string-price').innerText,
-        };
+        let nameProduct = button.querySelector('.name-modification').innerText;
+        let priceProduct = button.querySelector('.string-price').innerText;
 
-        let buttonItemHTML = `
+        console.log(test, test2)
+
+        document.querySelector(".general-wrapper__name").innerHTML = nameProduct;
+        document.querySelector(".final-price").innerHTML = priceProduct;
+        document.querySelector(".modification-name").innerHTML = nameProduct;
+
+        /*let buttonItemHTML = `
         <div class="wrapper-blockInfo">
             <div class="general-wrapper__name-block">
                 <span class="general-wrapper__name">${productInfo.title}</span>
@@ -189,10 +193,10 @@ window.addEventListener('click', function(event){
                 <span>${productInfo.title}</span>
             </div>
         </div>
-        `;
+        `;*/
 
         //отображение информации о модификации товара
-        infoWrapper.insertAdjacentHTML('beforeend' ,buttonItemHTML);
+        //infoWrapper.insertAdjacentHTML('beforeend' ,buttonItemHTML);
 
 
     }
