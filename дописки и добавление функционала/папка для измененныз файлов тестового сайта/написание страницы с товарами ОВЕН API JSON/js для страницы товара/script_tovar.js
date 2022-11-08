@@ -157,12 +157,42 @@ getResponse();
 
 // часть кода которая отвечает за выведение нужной цены при клике
 
+// блок где будет формироваться информация(цена,наименование)после клика
+let infoWrapper = document.querySelector('.general-wrapper__price-block');
+
+//отслеживаем клик на странице
 window.addEventListener('click', function(event){
 
+    //проверяем что клик был сделан в нужном месте
     if (event.target.hasAttribute('data-name')) {
 
+        //находим кнопку по которой был совершен клик
         let button = event.target.closest('.list-modification');
-        console.log(button);
+        
+
+        //собираем данные внутри кнопки(наименование,цена)
+        let productInfo = {
+            title: button.querySelector('.name-modification').innerText,
+            price: button.querySelector('.string-price').innerText,
+        };
+
+        let buttonItemHTML = `
+        <div class="wrapper-blockInfo">
+            <div class="general-wrapper__name-block">
+                <span class="general-wrapper__name">${productInfo.title}</span>
+            </div>
+            <span class="general-wrapper__price">Цена</span>
+            <div class="price-block">
+                <span class="final-price">${productInfo.price}.</span>
+            </div>
+            <div class="modification-name">Модификация: 
+                <span>${productInfo.title}</span>
+            </div>
+        </div>
+        `;
+
+        //отображение информации о модификации товара
+        infoWrapper.insertAdjacentHTML('beforeend' ,buttonItemHTML);
 
 
     }
