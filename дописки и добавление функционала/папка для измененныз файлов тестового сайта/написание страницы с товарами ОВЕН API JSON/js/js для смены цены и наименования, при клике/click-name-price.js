@@ -1,3 +1,12 @@
+//собираем данные внутри кнопки(наименование,цена)
+let nameProduct = button.querySelector('.name-modification').innerText;
+let priceProduct = button.querySelector('.string-price').innerText;
+
+//вставляем полученные данные в верстку
+document.querySelector(".general-wrapper__name").innerHTML = nameProduct;
+document.querySelector(".final-price").innerHTML = priceProduct;
+document.querySelector(".modification-name").innerHTML = nameProduct;
+
 // блок где будет формироваться информация(цена,наименование)после клика
 let infoWrapper = document.querySelector('.general-wrapper__price-block');
 
@@ -15,8 +24,7 @@ window.addEventListener('click', function(event){
         let nameProduct = button.querySelector('.name-modification').innerText;
         let priceProduct = button.querySelector('.string-price').innerText;
 
-        console.log(test, test2)
-
+        //вставляем полученные данные в верстку
         document.querySelector(".general-wrapper__name").innerHTML = nameProduct;
         document.querySelector(".final-price").innerHTML = priceProduct;
         document.querySelector(".modification-name").innerHTML = nameProduct;
@@ -24,3 +32,4 @@ window.addEventListener('click', function(event){
 
     
 })
+
