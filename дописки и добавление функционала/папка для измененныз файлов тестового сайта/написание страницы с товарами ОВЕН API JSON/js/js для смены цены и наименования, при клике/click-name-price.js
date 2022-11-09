@@ -1,4 +1,3 @@
-
 // блок где будет формироваться информация(цена,наименование)после клика
 let infoWrapper = document.querySelector('.general-wrapper__price-block');
 
@@ -19,28 +18,25 @@ window.addEventListener('click', function(event){
         //вставляем полученные данные в верстку
         document.querySelector('.general-wrapper__name').innerHTML = nameProduct;
         document.querySelector('.final-price').innerHTML = priceProduct;
-        document.querySelector('.modification-name').innerHTML = nameProduct;
+        document.querySelector('.general-name').innerHTML = nameProduct;
     }
 
     
 })
 
-//собираем данные внутри кнопки(наименование,цена) пока не работает
-/*function testFunction(){
-    let nameProduct2 = document.querySelector('.name-modification').innerText;
-    let priceProduct2 = document.querySelector('.string-price').innerText;
+//собираем данные внутри кнопки(наименование,цена)
+function testFunction() {
+    let productName = document.querySelector('.string-price').innerText;
+    let productPrice = document.querySelector('.name-modification').innerText;
 
-    //вставляем полученные данные в верстку
-    document.querySelector('.general-wrapper__name').innerHTML = nameProduct2;
-    document.querySelector('.final-price').innerHTML = priceProduct2;
-    document.querySelector('.modification-name').innerHTML = nameProduct2;
+    //вставляем собранные данные в верстку
+    document.querySelector('.final-price').innerHTML = productName;
+    document.querySelector('.general-wrapper__name').innerHTML = productPrice;
+    document.querySelector('.general-name').innerHTML = productPrice;
+
 }
+//запускаем код через 1 сек после загрузки страницы
+window.setTimeout(testFunction, 1500);
 
-testFunction();*/
 
-let TestTest = document.querySelector('.string-price').innerText;
-
-let testMas = [];
-testMas.push(TestTest);
-console.log(testMas);
 
