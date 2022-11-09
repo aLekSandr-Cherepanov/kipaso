@@ -26,7 +26,7 @@ window.addEventListener('click', function(event){
 })
 
 //собираем данные внутри кнопки(наименование,цена) пока не работает
-function testFunction(){
+/*function testFunction(){
     let nameProduct2 = document.querySelector('.name-modification').innerText;
     let priceProduct2 = document.querySelector('.string-price').innerText;
 
@@ -36,5 +36,11 @@ function testFunction(){
     document.querySelector('.modification-name').innerHTML = nameProduct2;
 }
 
-testFunction();
+testFunction();*/
+
+let TestTest = document.querySelector('.string-price').innerText;
+
+let testMas = [];
+testMas.push(TestTest);
+console.log(testMas);
 
