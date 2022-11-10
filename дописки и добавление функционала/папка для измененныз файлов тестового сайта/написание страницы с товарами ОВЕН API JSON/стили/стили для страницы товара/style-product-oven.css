@@ -150,7 +150,7 @@
     border: 1px solid #00aed9;
 }
 
-.list-modification:active {
+.color-change {
     color: #fff;
     background-color: #00aed9;
 }
