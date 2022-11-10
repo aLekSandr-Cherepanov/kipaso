@@ -146,8 +146,10 @@
 }
 
 .list-modification:hover {
-    color: #00aed9;
-    border: 1px solid #00aed9;
+    color: white;
+    background-color: #00aed9;
+    /*color: #00aed9;
+    border: 1px solid #00aed9;*/
 }
 
 .color-change {
@@ -291,4 +293,20 @@ h3 {
 
 .para-comment {
     display: none;
+}
+
+/* стили для скроллбара */
+
+::-webkit-scrollbar {
+    width: 14px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #e9e8e8;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #8f8f8f;
+    border-radius: 8px;
+    border: 3px solid #d4d4d4;
 }
