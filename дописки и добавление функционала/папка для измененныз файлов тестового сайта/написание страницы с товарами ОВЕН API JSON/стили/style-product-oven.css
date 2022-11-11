@@ -36,6 +36,7 @@
 .wrapper-list-img {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .img-category {
@@ -53,13 +54,15 @@
 }
 
 .wrapper-block_product {
-    width: 340px;
+    width: 300px;
     border-radius: 8px;
     margin: 3px;
-    border: 1px solid #e1e1e1;
+    /*border: 1px solid #e1e1e1;*/
 }
 
 .wrapper-block_product:hover  {
+    transform: scale(1.1);
+    transition: all 0.2s cubic-bezier(0.18, 0.89, 0.32, 1.28);
     -webkit-box-shadow: -2px 3px 9px 9px rgba(34, 60, 80, 0.2);
     -moz-box-shadow: -2px 3px 9px 9px rgba(34, 60, 80, 0.2);
     box-shadow: -2px 3px 9px 9px rgba(34, 60, 80, 0.2);
