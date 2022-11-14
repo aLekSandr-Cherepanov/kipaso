@@ -54,14 +54,14 @@
 }
 
 .wrapper-block_product {
-    width: 300px;
+    width: 250px;
     border-radius: 8px;
     margin: 3px;
     /*border: 1px solid #e1e1e1;*/
 }
 
 .wrapper-block_product:hover  {
-    transform: scale(1.1);
+    transform: scale(1.06);
     transition: all 0.2s cubic-bezier(0.18, 0.89, 0.32, 1.28);
     -webkit-box-shadow: -2px 3px 9px 9px rgba(34, 60, 80, 0.2);
     -moz-box-shadow: -2px 3px 9px 9px rgba(34, 60, 80, 0.2);
@@ -224,13 +224,13 @@
 .final-price {
     font-weight: bold;
     font-size: 26px;
-    color: #348c34;
+    color: #4a4a4a;
 }
 
 .name-money {
     font-weight: bold;
     font-size: 22px;
-    color: #348c34;
+    color: #4a4a4a;
 }
 
 .modification-name {
@@ -426,4 +426,82 @@ h3 {
 
 .wrapper-block-price {
     display: none;
+}
+
+/* адаптив для страниц товаров ОВЕН */
+
+@media (max-width: 800px){
+    .block_img {
+        display: none;
+    }
+    
+    .hero-subcategory {
+        font-size: 1.4em;
+    }
+
+    .hero-header {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 700px){
+    .block-list-product {
+        justify-content: space-around;
+    }
+
+    .wrapper-block_product {
+        width: 160px;
+    }
+
+    .product-block_image {
+        width: 120px;
+    }
+
+    .hero-photo {
+        width: 270px;
+    }
+
+    .photos__img {
+        width: 80px;
+    }
+}
+
+@media (max-width: 964px){
+    .wrapper-block_product:hover  {
+        transform: scale(1);
+        transition: all 0.2s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+                
+    }
+}
+
+@media (max-width: 964px){
+    .content__header {
+        font-size: 1.1rem;
+    }
+
+    .header-content {
+        display: block;
+    }
+
+    .price-left {
+        width: 100%;
+        padding-left: 0;
+
+    }
+
+    .general-wrapper__price-block {
+        margin-bottom: 40px;
+    }
+
+    .general-wrapper-price {
+        margin-bottom: 30px;
+    }
+
+    .block-photo-info {
+        flex-direction: column;
+        align-items: center;
+    }
 }
