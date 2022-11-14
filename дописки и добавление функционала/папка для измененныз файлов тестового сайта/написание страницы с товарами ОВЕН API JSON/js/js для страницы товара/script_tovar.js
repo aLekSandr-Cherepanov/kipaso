@@ -48,7 +48,7 @@ async function getResponse(){
     for(let key in listPrice) {
 
         modificationBlock.innerHTML += `
-        <li class="list-modification">
+        <li data-name class="list-modification">
             <span data-name class="name-modification color-change">${content[0].items[0].products[5].prices[key].name}</span>
             <span data price class="string-price" style="display: none;">${content[0].items[0].products[5].prices[key].price}</span>
         </li>

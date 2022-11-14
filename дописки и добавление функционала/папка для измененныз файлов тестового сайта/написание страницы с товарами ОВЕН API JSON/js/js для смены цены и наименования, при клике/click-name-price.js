@@ -35,8 +35,8 @@ function testFunction() {
     document.querySelector('.general-name').innerHTML = productPrice;
 
 }
-//запускаем код через 1 сек после загрузки страницы
-window.setTimeout(testFunction, 1500);
+//запускаем код через 2 сек после загрузки страницы
+window.setTimeout(testFunction, 2000);
 
 
 
