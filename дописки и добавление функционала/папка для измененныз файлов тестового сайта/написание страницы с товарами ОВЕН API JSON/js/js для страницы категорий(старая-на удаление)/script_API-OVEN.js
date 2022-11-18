@@ -118,6 +118,9 @@ async function getResponse(){
         <p>
             <a href="https://test.kipaso.ru/katalog-tovarov-oven(api)/kontrolno-izmeritelnyie-priboryi/izmeriteli-regulyatoryi/mpr51-regulyator-temperaturyi-i-vlazhnosti,-programmiruemyij-po-vremeni.html">${content[0].items[0].products[28].name}</a>
         </p>
+        <p>
+            <a href="https://test.kipaso.ru/katalog-tovarov-oven(api)/kontrolno-izmeritelnyie-priboryi/izmeriteli-regulyatoryi/mpr51-regulyator-temperaturyi-i-vlazhnosti,-programmiruemyij-po-vremeni.html">${content[0].items[0].products[29].name}</a>
+        </p>
     `
     //Для ГВС, отопления, вентиляции и котельных
 
