@@ -56,7 +56,7 @@
 .wrapper-block_product {
     width: 250px;
     border-radius: 8px;
-    margin: 3px;
+    margin: 7px;
     border: 1px solid #e1e1e1;
 }
 
@@ -77,7 +77,7 @@
 .block-list-product {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    /*justify-content: center;*/
 }
 
 .product-block_image{
@@ -135,6 +135,7 @@
 
 .block-photo-info {
     display: flex;
+    margin-bottom: 40px;
 }
 
 .logo-oven {
