@@ -332,6 +332,10 @@ h3 {
     padding-bottom: 15px;
 }
 
+.link-doc:hover {
+    text-decoration: revert;
+}
+
 .link-doc {
     text-decoration: none;
     color: black;
