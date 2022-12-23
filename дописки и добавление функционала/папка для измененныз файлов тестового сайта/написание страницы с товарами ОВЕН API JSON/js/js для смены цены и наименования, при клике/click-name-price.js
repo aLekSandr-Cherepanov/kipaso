@@ -35,6 +35,31 @@ function testFunction() {
     document.querySelector('.general-name').innerHTML = productPrice;
 
 }
+
+//закрашевание кнопки при клике
+
+/*$(".list-modification").click(function () {
+
+    $(".list-modification").removeClass("blue"); // Remove 'blue' CSS Class from all Buttons
+      
+    $(this).addClass("blue");
+  
+});*/
+
+
+var buttons = document.querySelectorAll("li");
+for(button in buttons) {
+	buttons[button].onclick = function(){
+        var blueButton = document.querySelector(".blue")[0];
+    	if(this.className == "list-modification") {
+            if( blueButton ) blueButton.className = "list-modification";
+            this.className = "blue";
+        }
+    }
+}
+
+
+
 //запускаем код через 2 сек после загрузки страницы
 window.setTimeout(testFunction, 2000);
 
