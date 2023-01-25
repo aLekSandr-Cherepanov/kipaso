@@ -46,22 +46,31 @@ function testFunction() {
   
 });*/
 
-
-var buttons = document.querySelectorAll("li");
-for(button in buttons) {
-	buttons[button].onclick = function(){
-        var blueButton = document.querySelector(".blue")[0];
-    	if(this.className == "list-modification") {
-            if( blueButton ) blueButton.className = "list-modification";
-            this.className = "blue";
-        }
-    }
-}
-
-
-
 //запускаем код через 2 сек после загрузки страницы
 window.setTimeout(testFunction, 2000);
+
+
+//код для подсветки активной кнопки
+const button = Array.from(document.querySelectorAll('.list-modification'));
+
+const clearActiveClass = (element, className = 'blue') => {
+    element.find(item => item.classList.remove(`${ className }`))
+}
+
+const setActiveClass = (element, index, className = 'blue') => {
+    element[index].classList.add(`${ className }`)
+  }
+
+
+const checkoutButton = (item, index) => {
+    item.addEventListener('click', () => {
+
+        clearActiveClass(button)
+        setActiveClass(button, index)
+    })
+}
+
+button.forEach(checkoutButton);
 
 
 
